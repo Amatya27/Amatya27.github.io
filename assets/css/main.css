@@ -184,10 +184,14 @@ input, select, textarea {
 		margin: 0 0 1rem 0;
 	}
 
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		h1 a,  h3 a, h4 a, h5 a, h6 a {
 			border-bottom: 0;
 			color: inherit;
 			text-decoration: none;
+		}
+
+		h2 a {
+			color: rgb(70, 70, 70);
 		}
 
 	h1 {
@@ -330,6 +334,7 @@ input, select, textarea {
 		width: 100%;
 		height: 100%;
 	  }
+
 /* Row */
 
 	.row {
@@ -3248,6 +3253,7 @@ input, select, textarea {
 			background-repeat: repeat,								no-repeat,													no-repeat;
 			background-attachment: scroll,								scroll,														scroll;
 			z-index: -1;
+			transition: background 0.5s;
 		}
 
 			#wrapper > .bg.fixed {
@@ -3339,8 +3345,14 @@ input, select, textarea {
 			color: #ffffff;
 		}
 
-		#intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
+		#intro h1,  #intro h3, #intro h4, #intro h5, #intro h6 {
 			color: #ffffff;
+		}
+		
+		#intro h2
+		{
+			font-size:4vw; 
+			color: rgb(165,42,42);
 		}
 
 		#intro blockquote {
@@ -4695,3 +4707,122 @@ input, select, textarea {
 		}
 
 	}
+
+.toggle
+{
+	top: 20px;
+	left: 20px;
+	background: rgba(255, 255, 255, 0.2);
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	position: fixed;
+	z-index: 100; /*to give priority to icon, and bring it in front*/
+}
+
+.toggle::before{
+	content: '\f186';
+	font-family: fontAwesome;
+	color:rgb(0, 187, 244);
+}
+
+.toggle:hover{
+	transform: scale(1.5);
+}
+
+section.dark #wrapper > .bg 
+{
+	background-image: url("../../images/flowers.jpg");
+}
+
+section.dark #intro h1{
+	color: rgb(232, 230, 227);
+}
+
+section.dark #intro h2{
+	color: rgb(0, 238, 255);
+}
+
+section.dark #intro p{
+	color: rgb(198, 198, 198);
+}
+section.dark #main {
+	background-color: #323840;
+}
+
+section.dark #navPanelToggle {
+	color: rgb(198, 198, 198);
+}
+
+section.dark #nav ul.links li.active a {
+	background: linear-gradient(to right, #323840 , #424650);
+	box-shadow: none;
+	color: rgb(198, 198, 198);
+}
+
+section.dark #footer > section.split.contact > section:first-child {
+	background-color: #424650;
+}
+
+section.dark #footer > section.split.contact > section > * {
+	color: #ffffff;
+}
+
+section.dark #footer a{
+	color: #ffffff;
+}
+
+section.dark #footer > section.split.contact > section:last-child {
+	background-color: #424650;
+}
+
+section.dark  a {
+	color: rgb(198, 198, 198);
+}
+
+section.dark header.major > p {
+	color: rgb(198, 198, 198);
+}
+section.dark p {
+	color: rgb(198, 198, 198);
+}
+
+section.dark b{
+	color: rgb(198, 198, 198);
+}
+
+section.dark a.button {
+	color: rgb(198, 198, 198) !important;
+	box-shadow: inset 0 0 0 2px rgb(198, 198, 198);
+	background-color: transparent;
+}
+section.dark #main > .post header.major > h1, #main > .post header.major h2 {
+	color: rgb(198, 198, 198);
+}
+
+section.dark #copyright a:hover {
+	border-bottom-color: transparent;
+	color: #18bfef !important;
+}
+
+section.dark #navPanelToggle.alt {
+	background-color: rgba(150,156,164, 0.875);
+	box-shadow: 0 0.125rem 0.75rem 0 rgba(130, 137, 145, 0.25);
+	color: #212931;
+}
+
+/* ________________________________ */
+section.dark a:hover {
+	border-bottom-color: transparent;
+	color: #18bfef !important;
+}
+
+/* _________________________________ */
+section.dark .toggle:before
+{
+	content: '\f185';
+	color: rgb(221, 255, 0)
+}

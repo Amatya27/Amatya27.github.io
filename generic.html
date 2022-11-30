@@ -10,9 +10,12 @@
 		<meta property="og:image" content="https://github.com/Amatya27/Amatya27.github.io/blob/master/images/avataaars.png?raw=true">
 		<meta property="og:url" content="https://amatya27.github.io/">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+
+		<section class="sec">
 
 		<!-- Wrapper -->
 		<div id="wrapper" class="fade-in">
@@ -20,7 +23,7 @@
 			<!-- Intro -->
 					<div id="intro">
 						<h1>Welcome To My Web Portfolio<br /></h1>
-						<h2>---------<b  style="font-size:4vw; color:rgb(165,42,42)">[Amatya Katyayan ]</b>---------</h2>
+						<h2>---------<b  style="font-size:4vw;">[Amatya Katyayan ]</b>---------</h2>
 						<p>A place where you can catch the latest updates on my projects and achievements!</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
@@ -38,6 +41,7 @@
 							<li><a href="index.html">My Projects</a></li>
 							<li class="active"><a href="generic.html">Coding Competitions</a></li>
 							<li><a href="elements.html">Research</a></li>
+							<li><a href="fyp.html">Final Year Project</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/amatya-k-85152a168/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -87,6 +91,8 @@
 							</section>
 					</div>
 
+				<div class="toggle"></div>
+
 				<!-- Footer -->
 				<footer id="footer">
 						
@@ -115,6 +121,15 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		</section>
+		<script>
+			const sec =document.querySelector('.sec');
+			const toggle=document.querySelector('.toggle');
+			toggle.onclick =function(){
+				sec.classList.toggle('dark')
+			}
+		</script>
 
 	</body>
 </html>
