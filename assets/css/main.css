@@ -4826,3 +4826,38 @@ section.dark .toggle:before
 	content: '\f185';
 	color: rgb(221, 255, 0)
 }
+
+/* ______________________________ */
+
+::-webkit-scrollbar {
+	width: 0.55em;
+  }
+  
+  ::-webkit-scrollbar-track {
+	background: rgb(50, 16, 50);
+	/* rgb(197, 95, 197); */
+	border-radius: 20vw;
+	/* margin-block: 0.5em; */
+   } 
+  
+ ::-webkit-scrollbar-thumb {
+	/* background: linear-gradient(red,rgb(240, 70, 240)); */
+	background: linear-gradient(maroon, rgb(194, 18, 106));
+	border: 0.08rem solid rgb(50, 16, 50); 
+	 /* rgb(248, 40, 144); */
+	border-radius: 20vw;
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(rgb(194, 18, 106), maroon);
+  }
+
+/* ______________________________ */
+
+@supports(scrollbar-color:rgb(194, 18, 106) rgb(50, 16, 50))
+{
+	*{
+		scrollbar-color: rgb(194, 18, 106) rgb(50, 16, 50);
+		scrollbar-width: thin;
+	}
+}
