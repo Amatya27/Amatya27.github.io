@@ -3348,11 +3348,16 @@ input, select, textarea {
 		#intro h1,  #intro h3, #intro h4, #intro h5, #intro h6 {
 			color: #ffffff;
 		}
-		
+
 		#intro h2
 		{
+			font-family: 'Acme';
 			font-size:4vw; 
-			color: rgb(165,42,42);
+			/* color: rgb(165,42,42); */
+			background: -webkit-linear-gradient(#ff0000, #910d04);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+
 		}
 
 		#intro blockquote {
@@ -4743,7 +4748,11 @@ section.dark #intro h1{
 }
 
 section.dark #intro h2{
-	color: rgb(0, 238, 255);
+	/* color: rgb(0, 238, 255); */
+	/* color: rgb(212, 136, 247); */
+	background: -webkit-linear-gradient(#eee, #333);
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
 
 section.dark #intro p{
