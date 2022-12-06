@@ -3353,10 +3353,14 @@ input, select, textarea {
 		{
 			font-family: 'Acme';
 			font-size:4.5vw; 
-			/* color: rgb(165,42,42); */
-			background: -webkit-linear-gradient(rgb(255, 77, 0), rgba(149, 0, 0, 0.897));
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+			color: rgb(165,42,42); 
+			padding: 10px; 
+			background: rgba(248, 248, 255, 0.204);
+            margin: 10px;
+
+			/* background: -webkit-linear-gradient(rgb(255, 77, 0), rgba(149, 0, 0, 0.897));
+			 -webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;  */
 
 		}
 
