@@ -4874,3 +4874,39 @@ section.dark .toggle:before
 		scrollbar-width: thin;
 	}
 }
+
+/* === Dark Mode Styles === */
+.sec.dark {
+	background-color: #121212;
+	color: #e0e0e0;
+  }
+  .sec.dark a {
+	color: #90cdf4;
+  }
+  .sec.dark .button {
+	background-color: #333;
+	color: #fff;
+	border: 1px solid #555;
+  }
+  .sec.dark .button:hover {
+	background-color: #444;
+  }
+  
+  /* === Back to Top Button === */
+  .back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background: #444;
+	color: #fff;
+	padding: 10px 12px;
+	border-radius: 50%;
+	display: none;
+	z-index: 1000;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+  }
+  .back-to-top:hover {
+	background-color: #666;
+  }
+  

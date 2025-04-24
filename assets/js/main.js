@@ -250,4 +250,34 @@
 
 		}
 
+		// Back to top button logic
+$(window).scroll(function() {
+	if ($(this).scrollTop() > 200) {
+	  $('.back-to-top').fadeIn();
+	} else {
+	  $('.back-to-top').fadeOut();
+	}
+  });
+  
+  // Dark mode toggle with localStorage memory
+  document.addEventListener('DOMContentLoaded', function () {
+	const sec = document.querySelector('.sec');
+	const toggle = document.querySelector('.toggle');
+	const currentTheme = localStorage.getItem('theme');
+  
+	if (currentTheme === 'dark') {
+	  sec.classList.add('dark');
+	}
+  
+	toggle.onclick = function () {
+	  sec.classList.toggle('dark');
+	  let theme = 'light';
+	  if (sec.classList.contains('dark')) {
+		theme = 'dark';
+	  }
+	  localStorage.setItem('theme', theme);
+	}
+  });
+  
+
 })(jQuery);
