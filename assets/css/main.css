@@ -1,4 +1,4 @@
-@import url(fontawesome-all.min.css);
+@import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
 
@@ -3423,8 +3423,13 @@ input, select, textarea {
 		#intro p {
 			font-size: 1.25rem;
 			font-style: italic;
-			margin-top: -0.25rem;
+			margin-top: 1rem;
 			text-align: center;
+			font-weight: 700;
+			color: #ffffff;         /* base color */
+			filter: drop-shadow(0 2px 4px rgba(23, 22, 22, 0.7));
+			/* wherever white lands, it inverts the background for maximum contrast */
+			mix-blend-mode: difference;
 		}
 
 		#intro + #header {
@@ -3744,6 +3749,7 @@ input, select, textarea {
 					font-size: 0.8rem;
 					outline: none;
 					padding: 0 2rem;
+					filter: drop-shadow(0 2px 4px rgba(23, 22, 22, 0.7));
 				}
 
 					#nav ul.links li a:hover {
@@ -3757,6 +3763,7 @@ input, select, textarea {
 
 					#nav ul.links li.active a {
 						color: #1e252d;
+						filter: none;
 					}
 
 						#nav ul.links li.active a:hover {
@@ -4800,6 +4807,7 @@ section.dark  a {
 section.dark header.major > p {
 	color: rgb(198, 198, 198);
 }
+
 section.dark p {
 	color: rgb(198, 198, 198);
 }
@@ -4815,6 +4823,7 @@ section.dark a.button {
 section.dark #main > .post header.major > h1, #main > .post header.major h2 {
 	color: rgb(198, 198, 198);
 }
+
 
 section.dark #copyright a:hover {
 	border-bottom-color: transparent;
@@ -4909,4 +4918,257 @@ section.dark .toggle:before
   .back-to-top:hover {
 	background-color: #666;
   }
+
+  img.avatar-outline {
+	filter: drop-shadow(0 0 1px black);
+  }
+
+  /* Slideshow */
+/* === Slideshow (one image at a time, container auto-sized) === */
+.slideshow {
+	position: relative;
+	overflow: hidden;
+	max-width: 800px;
+  max-height: 500px;
+  margin: 0 auto;       /* center it */
+  overflow: hidden;
+  }
+
+  .slideshow img {
+	opacity: 0;
+	transition: opacity 0.8s ease-in-out;
+  }
   
+  .slideshow img.active {
+	display: block;
+	opacity: 1;
+  }
+  
+  
+  .slideshow img {
+	display: none;
+	width: 100%;
+	height: auto;
+  }
+  
+  .slideshow img.active {
+	display: block;
+  }
+
+/* Enhanced Slideshow Container */
+.slideshow-container {
+	position: relative;
+	max-width: 800px;    /* adjust as needed */
+	margin: 0 auto 2rem;
+	overflow: hidden;
+	width: 100%;
+  }
+  
+  /* Hide all slides by default */
+  .slideshow-container .slideshow img {
+	display: none;
+	width: 100%;
+	height: 100%;
+	object-fit: contain; /* letterbox if aspect differs */
+	transition: opacity 0.8s ease-in-out;
+  }
+  
+  /* Show only the active slide */
+  .slideshow-container .slideshow img.active {
+	display: block;
+  }
+  
+  /* Caption box */
+  .slideshow-container .caption {
+	text-align: center;
+	background: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	padding: 0.5rem;
+	font-size: 0.9rem;
+  }
+  
+  
+
+
+  
+  /* Hide all slides by default, show only the .active */
+  .slideshow img {
+	display: none;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+  }
+  
+  .slideshow img.active {
+	display: block;
+  }
+  
+  /* ─────────────────────────────────────────
+	 Controls (Previous / Pause / Next)
+	 ───────────────────────────────────────── */
+  .slideshow-controls {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+  }
+  
+  .slideshow-controls button {
+	margin: 0 0.5rem;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+	font-size: 1.1rem;
+  }
+  
+  /* ─────────────────────────────────────────
+	 Caption
+	 ───────────────────────────────────────── */
+  .caption {
+	text-align: center;
+	margin-top: 0.5rem;
+	font-style: italic;
+  }
+  
+  
+
+/* Skills bars */
+.skills { list-style: none; padding: 0; }
+.skills li { margin-bottom: 0.5rem; display: flex; align-items: center; }
+.skills li span { width: 120px; }
+.skills li .bar { flex: 1; background: #ddd; height: 8px; margin-left: 1rem; position: relative; }
+.skills li .bar div { background: #18bfef; height: 100%; }
+
+/* Experience list */
+.experience { list-style: none; padding: 0; }
+.experience li { margin-bottom: 0.75rem; }
+
+/* ─── Dark-mode beige slideshow controls only ─── */
+.sec.dark .slideshow-container button.prev,
+.sec.dark .slideshow-container button.next,
+.sec.dark .slideshow-container button.pause {
+  background-color: beige !important;
+  border-color: beige !important;
+  color: #212931 !important; /* dark text on light button */
+}
+
+.sec.dark .slideshow-container button.prev:hover,
+.sec.dark .slideshow-container button.next:hover,
+.sec.dark .slideshow-container button.pause:hover {
+  background-color: #f5e6cc !important;
+}
+
+/* ── Featured “Achievements & Highlights” ── */
+.post.featured {
+	/* if you already have padding on .post, feel free to tweak */
+	padding: 3rem 1rem;
+  }
+  
+  .post.featured .featured-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;       /* ← center the group */
+	gap: 2rem;                     /* space between owl & text */
+	flex-wrap: wrap;               /* stack on small screens */
+	max-width: 1000px;             /* prevent it from stretching too wide */
+	margin: 0 auto 1.5rem;         /* center horizontally + bottom gap */
+	text-align: left;              
+  }
+  
+  .post.featured .featured-icon {
+	flex-shrink: 0;                /* don’t let the icon shrink */
+	border-radius: 0.5rem;         /* optional rounding */
+  }
+  
+  .post.featured .featured-text {
+	/* don’t force this to “flex:1” — let it size to its content */
+	max-width: 600px;              /* optional: keeps line-length readable */
+  }
+  
+  .post.featured .download-cta {
+	text-align: center;            
+	margin-top: 1rem;
+  }
+  
+/* Only the “Achievements & Highlights” header */
+section.dark header.major.featured-header h1,
+section.dark header.major.featured-header h2,
+section.dark header.major.featured-header p {
+  color: rgb(198, 198, 198);
+}
+
+/* 1. Make header a flex container */
+header.major.featured-header {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;            /* allow wrapping on small screens */
+	justify-content: center;    /* center horizontally if extra space */
+	gap: 2rem;                  /* space between owl & text */
+	margin-bottom: 2rem;
+	text-align: left;
+  }
+  
+  /* 2. Constrain and space the owl image */
+  header.major.featured-header img {
+	flex: 0 0 auto;             /* don’t stretch */
+	width: 150px;               /* max size on desktop */
+	height: auto;
+	margin: 0;                  /* gap is handled by `gap` */
+  }
+  
+  /* 3. Let the text block flex and wrap */
+  header.major.featured-header .featured-text {
+	flex: 1 1 300px;            /* grow, shrink, min-width 300px */
+  }
+  
+  /* 4. Adjust typography if you like */
+  header.major.featured-header h2 {
+	margin: 0 0 0.5rem 0;
+	font-size: 2.5rem;          /* tweak as desired */
+	line-height: 1.1;
+  }
+  
+  header.major.featured-header p {
+	margin: 0;
+	font-size: 1.1rem;
+	color: #ccc;                /* light text in dark mode */
+  }
+  
+  /* 5. Responsive breakpoint: stack & center */
+  @media screen and (max-width: 980px) {
+	header.major.featured-header {
+	  flex-direction: column;   /* owl on top, text below */
+	  text-align: center;
+	}
+  
+	header.major.featured-header img {
+	  width: 120px;             /* shrink for mobile */
+	  margin-bottom: 1rem;      /* space below the owl */
+	}
+  
+	header.major.featured-header .featured-text {
+	  flex: 1 1 auto;
+	}
+  
+	header.major.featured-header h2 {
+	  font-size: 2rem;
+	}
+  }
+
+  .slideshow img {
+	display: none;
+	width: 100%;
+	height: auto;
+  }
+  
+  .slideshow img.active {
+	display: block;
+  }
+
+  header.major.featured-header h2,
+header.major.featured-header p {
+  color: #212931 !important; /* black text in light mode */
+}
+
+.sec.dark header.major.featured-header h2,
+.sec.dark header.major.featured-header p {
+  color: rgb(198, 198, 198) !important;
+}

@@ -279,5 +279,85 @@ $(window).scroll(function() {
 	}
   });
   
+// Enhanced slideshow with controls & captions (now supports multiple containers)
+document.addEventListener('DOMContentLoaded', () => {
+	// Find all slideshow blocks
+	document
+	  .querySelectorAll('.slideshow-container')
+	  .forEach(container => {
+		const slides    = container.querySelectorAll('.slideshow img');
+		const caption   = container.querySelector('.caption');
+		const nextBtn   = container.querySelector('button.next');
+		const prevBtn   = container.querySelector('button.prev');
+		const pauseBtn  = container.querySelector('button.pause');
+		let   current   = 0;
+		let   playing   = true;
+		let   timer;
+  
+		// Seed captions from alt text
+		slides.forEach(img => {
+		  img.dataset.caption = img.alt;
+		});
+  
+		// Show slide at index
+		function showSlide(idx) {
+		  slides[current].classList.remove('active');
+		  current = (idx + slides.length) % slides.length;
+		  slides[current].classList.add('active');
+		  caption.textContent = slides[current].dataset.caption;
+		}
+  
+		function nextSlide() { showSlide(current + 1); }
+		function prevSlide() { showSlide(current - 1); }
+  
+		// Play / Pause toggle
+		function togglePlay() {
+		  if (playing) {
+			clearInterval(timer);
+			pauseBtn.textContent = '▶';
+		  } else {
+			timer = setInterval(nextSlide, 4000);
+			pauseBtn.textContent = '❚❚';
+		  }
+		  playing = !playing;
+		}
+  
+		// Wire up buttons
+		nextBtn.addEventListener('click', () => {
+		  nextSlide();
+		  if (playing) { clearInterval(timer); timer = setInterval(nextSlide, 4000); }
+		});
+		prevBtn.addEventListener('click', () => {
+		  prevSlide();
+		  if (playing) { clearInterval(timer); timer = setInterval(nextSlide, 4000); }
+		});
+		pauseBtn.addEventListener('click', togglePlay);
+  
+		// Start it
+		showSlide(current);
+		timer = setInterval(nextSlide, 4000);
+	  });
+  });
+  
+  // Simple auto-slideshow for elements with class simple-slideshow
+document.addEventListener('DOMContentLoaded', () => {
+	const simpleSlideshows = document.querySelectorAll('.simple-slideshow');
+  
+	simpleSlideshows.forEach(container => {
+	  const slides = container.querySelectorAll('img');
+	  let current = 0;
+  
+	  function showSlide(idx) {
+		slides[current].classList.remove('active');
+		current = (idx + slides.length) % slides.length;
+		slides[current].classList.add('active');
+	  }
+  
+	  setInterval(() => {
+		showSlide(current + 1);
+	  }, 4000); // Change slide every 4 seconds
+	});
+  });
+  
 
 })(jQuery);
