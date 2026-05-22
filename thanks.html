@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You | Amatya Katyayan</title>
+  <meta
+    name="description"
+    content="Thank you page for portfolio contact requests sent to Amatya Katyayan."
+  />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="canonical" href="https://amatya27.github.io/thanks.html" />
+  <link rel="icon" href="logo.ico" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <meta name="theme-color" content="#081121" />
+  <script>
+    (function () {
+      var theme = "dark";
+      try {
+        var storedTheme = localStorage.getItem("portfolio-theme");
+        var systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        theme = storedTheme || systemTheme;
+      } catch (error) {
+        theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.dataset.theme = theme;
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body id="top" data-page="thanks">
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#home" aria-label="Amatya Katyayan home">
+        <span class="brand-mark brand-mark-avatar">
+          <img class="brand-avatar" src="images/avataaars.png" width="80" height="80" alt="" />
+        </span>
+        <span class="brand-text">Amatya Katyayan</span>
+      </a>
+      <div class="header-actions">
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#research">Research</a>
+          <a href="index.html#achievements">Achievements</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="section page-hero">
+      <div class="container page-hero-grid">
+        <div data-reveal>
+          <p class="eyebrow">Message Sent</p>
+          <h1>Thank you for reaching out</h1>
+          <p class="page-intro">
+            Your message has been submitted successfully. I appreciate the outreach and will respond as soon as I can.
+          </p>
+          <div class="button-row">
+            <a class="button" href="index.html#contact">Back to contact</a>
+            <a
+              class="button button-secondary"
+              href="https://www.linkedin.com/in/amatya-katyayan/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Connect on LinkedIn
+            </a>
+          </div>
+        </div>
+        <article class="card" data-reveal>
+          <p class="card-label">Next step</p>
+          <h2>Professional follow-up</h2>
+          <p>
+            If your message is time-sensitive, LinkedIn is also a good way to connect while I review incoming requests.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <a class="back-to-top" href="#top" aria-label="Back to top">↑</a>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-title">Amatya Katyayan</p>
+        <p>Robotics, AI, computer vision, and production software.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#research">Research</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <p class="footer-copy">Copyright <span id="current-year"></span> Amatya Katyayan</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

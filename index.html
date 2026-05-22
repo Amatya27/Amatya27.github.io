@@ -1,277 +1,1190 @@
-<!-- index.html -->
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Amatya Katyayan – Portfolio</title>
-	<link rel="shortcut icon" href="logo.ico" />
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="keywords" content="Amatya Katyayan">
-	<meta property="og:title" content="Amatya Katyayan">
-	<meta property="og:description" content="-Web Portfolio-">
-	<meta property="og:image" content="images/avataaars.png">
-	<meta property="og:url" content="https://amatya27.github.io/">
-	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amatya Katyayan | Robotics, AI &amp; Software Engineer</title>
+  <meta
+    name="description"
+    content="Portfolio of Amatya Katyayan, a Robotics and AI graduate student at Arizona State University building intelligent systems across computer vision, machine learning, robotics, and software engineering."
+  />
+  <meta
+    name="keywords"
+    content="Amatya Katyayan, robotics engineer, AI engineer, software engineer, computer vision, machine learning, ROS, Python, C++, Arizona State University, Dobot, YOLO, OpenCV"
+  />
+  <meta name="author" content="Amatya Katyayan" />
+  <meta name="theme-color" content="#081121" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Amatya Katyayan | Robotics, AI &amp; Software Engineer" />
+  <meta
+    property="og:description"
+    content="Portfolio of Amatya Katyayan, a Robotics and AI graduate student at Arizona State University building intelligent systems across computer vision, machine learning, robotics, and software engineering."
+  />
+  <meta property="og:url" content="https://amatya27.github.io/" />
+  <meta property="og:image" content="https://amatya27.github.io/images/Agri.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Amatya Katyayan | Robotics, AI &amp; Software Engineer" />
+  <meta
+    name="twitter:description"
+    content="Portfolio of Amatya Katyayan, a Robotics and AI graduate student at Arizona State University building intelligent systems across computer vision, machine learning, robotics, and software engineering."
+  />
+  <meta name="twitter:image" content="https://amatya27.github.io/images/Agri.png" />
+  <link rel="canonical" href="https://amatya27.github.io/" />
+  <link rel="icon" href="logo.ico" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <script>
+    (function () {
+      var theme = "dark";
+      try {
+        var storedTheme = localStorage.getItem("portfolio-theme");
+        var systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        theme = storedTheme || systemTheme;
+      } catch (error) {
+        theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.dataset.theme = theme;
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
+<body id="top" data-page="home">
+  <a class="skip-link" href="#content">Skip to content</a>
 
-<body class="is-preload">
-	<section class="sec">
-		<div id="wrapper" class="fade-in">
-			<div id="intro">
-				<h1>Welcome To My Web Portfolio</h1>
-				<h2>Amatya Katyayan</h2>
-				<p>A place where you can catch the latest updates on my projects and achievements!</p>
-				<ul class="actions">
-					<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-				</ul>
-				<li>
-					<a href="resume.pdf" class="button primary" target="_blank" download>Download Resume</a>
-				</li>
-			</div>
-			<header id="header">
-				<a href="index.html" class="logo">Shazam!</a>
-			</header>
-			<nav id="nav">
-				<ul class="links">
-					<li class="active"><a href="index.html">My Projects</a></li>
-					<li><a href="generic.html">Coding Competitions</a></li>
-					<li><a href="elements.html">Research</a></li>
-					<li><a href="fyp.html">Final Year Project</a></li>
-					<li><a href="profile.html">Achievements</a></li>
-				</ul>
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/amatya-k-85152a168/" class="icon brands fa-linkedin"><span
-								class="label">LinkedIn</span></a></li>
-					<li><a href="https://github.com/Amatya27" class="icon brands fa-github"><span
-								class="label">GitHub</span></a></li>
-				</ul>
-			</nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Amatya Katyayan home">
+        <span class="brand-mark brand-mark-avatar">
+          <img class="brand-avatar" src="images/avataaars.png" width="80" height="80" alt="" />
+        </span>
+        <span class="brand-text">Amatya Katyayan</span>
+      </a>
+      <div class="header-actions">
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#research">Research</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
+  <main id="content">
+    <section class="hero section hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Robotics, Computer Vision, and Intelligent Systems</p>
+          <h1>Amatya Katyayan</h1>
+          <p class="hero-subtitle">Robotics &amp; AI Graduate Student | Software Engineer</p>
+          <p class="hero-intro">
+            I build intelligent systems across robotics, computer vision, machine learning, and production software.
+          </p>
+          <p class="hero-supporting">
+            M.S. Robotics and Autonomous Systems, AI Track @ Arizona State University
+          </p>
+          <div class="button-row">
+            <a class="button" href="#projects">View Projects</a>
+            <a class="button button-secondary" href="#resume-request">Request Resume</a>
+            <a
+              class="button button-ghost"
+              href="https://github.com/amatya27"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              class="button button-ghost"
+              href="https://www.linkedin.com/in/amatya-katyayan/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a class="button button-ghost" href="#contact-form">Contact</a>
+          </div>
+        </div>
 
+        <aside class="hero-panel" data-reveal>
+          <div class="panel-frame">
+            <div class="panel-chip">At a Glance</div>
+            <div class="hero-metrics">
+              <article class="metric-card">
+                <p class="metric-label">Current focus</p>
+                <h2>Robotics, AI, and Vision</h2>
+                <p>Building reliable systems that connect perception, learning, and practical software.</p>
+              </article>
+              <article class="metric-card">
+                <p class="metric-label">Education</p>
+                <h2>Arizona State University</h2>
+                <p>M.S. in Robotics and Autonomous Systems, Artificial Intelligence Track, expected May 2027.</p>
+              </article>
+              <article class="metric-card">
+                <p class="metric-label">Experience</p>
+                <h2>Industry, Research, and Training</h2>
+                <p>Software developer, published researcher, and technical trainer working across applied AI systems.</p>
+              </article>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-			<!-- Main -->
-			<div id="main">
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">About</p>
+          <h2>Building practical AI systems with strong engineering fundamentals</h2>
+        </div>
+        <div class="about-grid">
+          <article class="card prose-card" data-reveal>
+            <p>
+              I am a Robotics and AI graduate student at Arizona State University with experience across software
+              engineering, applied AI, robotics education, and research. My work spans computer vision, autonomous
+              robotics, deep learning, React/Spring Boot platforms, and real-world technical training. I am currently
+              focused on building reliable intelligent systems that connect AI models with practical robotics and
+              software applications.
+            </p>
+          </article>
 
-				<!-- Featured Post -->
-				<article class="post featured">
-					<header class="major">
-						<h2><a href="#">Amatya Katyayan</a></h2>
-						<p>
-							Hey folks!<br>
-							A passionate developer and a tech enthusiast exploring the field of AI and ML.<br>
-							I am currently pursuing my degree in B.E. CSE from DBCE and am in the final year of
-							Engineering.<br>
-							Apart from developing applications in C, C++, Java, and Python, I have also deployed apps on
-							Google Assistant and Alexa.
-						</p>
-					</header>
-					<a href="#" class="image main">
-						<img src="images/avataaars.png" width="305" height="310" loading="lazy" decoding="async"
-							class="center avatar-outline" alt="Cartoon avatar of Amatya Katyayan"
-							style="width:305px; height:310px; display:block; margin:0 auto;" />
-					</a>
-					<ul class="actions special">
-						<li><a href="https://www.linkedin.com/in/amatya-k-85152a168/" class="button large">Say Hello</a>
-						</li>
-					</ul>
-				</article>
+          <div class="stacked-cards" data-reveal>
+            <article class="card">
+              <p class="card-label">Education</p>
+              <h3>M.S. in Robotics and Autonomous Systems</h3>
+              <p>Artificial Intelligence Track</p>
+              <p>Arizona State University, Tempe, AZ</p>
+              <p>Expected May 2027</p>
+              <p>GPA: 4.22 / 4.00</p>
+            </article>
+            <article class="card">
+              <p class="card-label">Foundation</p>
+              <h3>B.E. in Computer Engineering</h3>
+              <p>Goa University, Goa, India</p>
+              <p>May 2022</p>
+              <p>86.48%</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<!-- Posts -->
-				<section class="post">
-					<article>
-						<header>
-							<h2><a href="#">AI-Powered Sentiment Analyzer</a></h2>
-						</header>
-						<div class="iframe-container">
-							<iframe width="560" height="315"
-								src="https://www.youtube.com/embed/C0bNyXjidzA?si=aUNybhyBkzG2mtZR"
-								title="YouTube video player" loading="lazy" frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								allowfullscreen>
-							</iframe>
-						</div>
-						<p>
-							Developed an AI-Powered Sentiment Analyzer that can help transform the Hiring Process! Want to know how? Check the links below!
-						</p>
-						<ul class="actions special">
-							<li><a href="https://amatya27.github.io/sentiment-analysis-tool/" class="button">Use the Tool</a></li>
-							<li><a href="https://github.com/Amatya27/sentiment-analysis-tool" class="button">Code</a></li>
-						</ul>
-					</article>
-				</section>
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Featured Projects</p>
+          <h2>Selected work in robotics, computer vision, and applied AI</h2>
+        </div>
 
-				<section class="post">
-					<article>
-						<header>
-							<h2><a href="#">A.G.R.O. the AI powered Chatbot</a></h2>
-						</header>
-						<div class="iframe-container">
-							<iframe width="560" height="315" class="center" style="max-width:100%;"
-								src="https://www.youtube.com/embed/sU0c1Tfny_Q" title="A.G.R.O. AI Chatbot demo"
-								loading="lazy" frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen></iframe>
-						</div>
-						<p>
-							Developed an AI-Powered Chatbot for customer support and guidance using speech recognition,
-							analysis, and synthesis in Python.
-							A.G.R.O. stands for Automated Guide and Reliable Organizer.
-						</p>
-						<ul class="actions special">
-							<li><a href="https://github.com/Amatya27/AGRO_AI_Assistant" class="button">Code</a></li>
-							<li><a href="https://www.youtube.com/watch?v=UBh2DF4_Ql0" class="button">Check out the full
-									video!</a></li>
-						</ul>
-					</article>
-				</section>
+        <div class="project-grid">
+          <article class="project-card" data-reveal>
+            <div class="media-frame">
+              <button
+                class="video-thumb"
+                type="button"
+                data-youtube-player
+                data-video-id="ukr_7SG5Fbk"
+                data-video-title="Autonomous Tic-Tac-Toe Playing Robot demo"
+                aria-label="Play Autonomous Tic-Tac-Toe Playing Robot demo"
+              >
+                <img
+                  src="https://i.ytimg.com/vi/ukr_7SG5Fbk/hqdefault.jpg"
+                  alt="Thumbnail for the Autonomous Tic-Tac-Toe Playing Robot demo"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="video-thumb-badge">YouTube Demo</span>
+                <span class="video-thumb-play" aria-hidden="true">▶</span>
+                <span class="video-thumb-copy">Play Video</span>
+              </button>
+            </div>
+            <div class="project-content">
+              <div class="card-topline">
+                <span class="pill">Featured</span>
+                <span class="pill pill-muted">Computer Vision</span>
+              </div>
+              <h3>Autonomous Tic-Tac-Toe Playing Robot</h3>
+              <p>
+                Built a system that detects human-drawn X/O symbols using OpenCV and contour-based vision modeling,
+                then responds with AI-driven moves through the Dobot arm.
+              </p>
+              <div class="chip-list" aria-label="Technologies used">
+                <span class="chip">OpenCV</span>
+                <span class="chip">Contour Modeling</span>
+                <span class="chip">Game AI</span>
+                <span class="chip">Dobot SDK</span>
+              </div>
+              <div class="button-row">
+                <a
+                  class="button button-small"
+                  href="https://www.youtube.com/watch?v=ukr_7SG5Fbk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Demo
+                </a>
+                <a class="button button-small button-secondary" href="#detail-tictactoe">Details</a>
+              </div>
+            </div>
+          </article>
 
-				<section class="posts">
-					<article>
-						<header>
-							<h2><a href="#">Mytinerary<br />A To-Do-Lists App</a></h2>
-						</header>
-						<a href="#" class="image fit">
-							<img src="images/ToDo.PNG" loading="lazy" decoding="async" class="center"
-								alt="Screenshot of Mytinerary To-Do List App" style="max-width:100%;" />
-						</a>
-						<p>
-							Used to forgetting things? Mytinerary is a desktop app with an interactive GUI secured by
-							email/password.
-						</p>
-						<ul class="actions special">
-							<li><a href="https://github.com/Amatya27/Mytinerary" class="button">Check it out!</a></li>
-						</ul>
-					</article>
+          <article class="project-card" data-reveal>
+            <div class="media-frame">
+              <button
+                class="video-thumb"
+                type="button"
+                data-youtube-player
+                data-video-id="-E9D1oegnaE"
+                data-video-title="Object Detection and Classification using Dobot and YOLO demo"
+                aria-label="Play Object Detection and Classification using Dobot and YOLO demo"
+              >
+                <img
+                  src="https://i.ytimg.com/vi/-E9D1oegnaE/hqdefault.jpg"
+                  alt="Thumbnail for the Object Detection and Classification using Dobot and YOLO demo"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="video-thumb-badge">YouTube Demo</span>
+                <span class="video-thumb-play" aria-hidden="true">▶</span>
+                <span class="video-thumb-copy">Play Video</span>
+              </button>
+            </div>
+            <div class="project-content">
+              <div class="card-topline">
+                <span class="pill">Featured</span>
+                <span class="pill pill-muted">Robotics</span>
+              </div>
+              <h3>Object Detection and Classification using Dobot &amp; YOLO</h3>
+              <p>
+                Created an automated pick-and-place robot using YOLOv5 for real-time object classification and robotic
+                sorting through motion planning.
+              </p>
+              <div class="chip-list" aria-label="Technologies used">
+                <span class="chip">YOLOv5</span>
+                <span class="chip">Object Detection</span>
+                <span class="chip">Motion Planning</span>
+                <span class="chip">Robotic Sorting</span>
+              </div>
+              <div class="button-row">
+                <a
+                  class="button button-small"
+                  href="https://www.youtube.com/watch?v=-E9D1oegnaE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Demo
+                </a>
+                <a class="button button-small button-secondary" href="#detail-yolo">Details</a>
+              </div>
+            </div>
+          </article>
 
-					<article>
-						<header>
-							<h2><a href="#">Crappy Birds<br />A Java Game</a></h2>
-						</header>
-						<a href="#" class="image fit">
-							<img src="images/Crappy.jpg" loading="lazy" decoding="async" class="center"
-								alt="Screenshot of Crappy Birds Java Game" style="max-width:100%;" />
-						</a>
-						<p>
-							Inspired by Flappy Birds, avoid colliding the bouncing brick with incoming obstacles in this
-							endless journey.
-						</p>
-						<ul class="actions special">
-							<li><a href="https://github.com/Amatya27/CrappyBirds" class="button">Check it out!</a></li>
-						</ul>
-					</article>
+          <article class="project-card" data-reveal>
+            <div class="media-frame">
+              <a
+                class="video-thumb"
+                href="https://youtube.com/shorts/dg8OyQElKI4?si=XtqKsxKFTOw00kqU"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Watch AI-Driven Maze Solving Robot short on YouTube"
+              >
+                <img
+                  src="https://i.ytimg.com/vi/dg8OyQElKI4/hqdefault.jpg"
+                  alt="Thumbnail for the AI-Driven Maze Solving Robot YouTube Short"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="video-thumb-badge">YouTube Shorts</span>
+                <span class="video-thumb-play" aria-hidden="true">▶</span>
+                <span class="video-thumb-copy">Watch Video</span>
+              </a>
+            </div>
+            <div class="project-content">
+              <div class="card-topline">
+                <span class="pill">Featured</span>
+                <span class="pill pill-muted">Autonomous Robotics</span>
+              </div>
+              <h3>AI-Driven Maze Solving Robot</h3>
+              <p>
+                Developed an AI system that perceives maze structures via a top-mounted camera and guides the Dobot arm
+                to trace the solution path using perception and control integration.
+              </p>
+              <div class="chip-list" aria-label="Technologies used">
+                <span class="chip">Perception</span>
+                <span class="chip">Control Integration</span>
+                <span class="chip">Path Tracing</span>
+                <span class="chip">Robotics</span>
+              </div>
+              <div class="button-row">
+                <a
+                  class="button button-small"
+                  href="https://youtube.com/shorts/dg8OyQElKI4?si=XtqKsxKFTOw00kqU"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Demo
+                </a>
+                <a class="button button-small button-secondary" href="#detail-maze">Details</a>
+              </div>
+            </div>
+          </article>
 
-					<article>
-						<header>
-							<h2><a href="#">War Zone<br />[A C++ Game]</a></h2>
-						</header>
-						<a href="#" class="image fit">
-							<img src="images/WarZone.jpeg" loading="lazy" decoding="async" class="center"
-								alt="Screenshot of War Zone C++ Game" style="max-width:100%;" />
-						</a>
-						<p>
-							Test your wits and avoid enemy planes in this war zone game built with C++ and Turtle
-							graphics.
-						</p>
-						<ul class="actions special">
-							<li><a href="https://github.com/Amatya27/WarZone" class="button">Check it out!</a></li>
-						</ul>
-					</article>
+          <article class="project-card" data-reveal>
+            <div class="media-frame">
+              <button
+                class="video-thumb"
+                type="button"
+                data-youtube-player
+                data-video-id="OSB92jDg81c"
+                data-video-title="Smart Agriculture System using AI and IoT demo"
+                aria-label="Play Smart Agriculture System using AI and IoT demo"
+              >
+                <img
+                  src="https://i.ytimg.com/vi/OSB92jDg81c/hqdefault.jpg"
+                  alt="Thumbnail for the Smart Agriculture System using AI and IoT demo"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="video-thumb-badge">YouTube Demo</span>
+                <span class="video-thumb-play" aria-hidden="true">▶</span>
+                <span class="video-thumb-copy">Play Video</span>
+              </button>
+            </div>
+            <div class="project-content">
+              <div class="card-topline">
+                <span class="pill">Featured</span>
+                <span class="pill pill-muted">AI + IoT</span>
+              </div>
+              <h3>Smart Agriculture System using AI and IoT</h3>
+              <p>
+                Designed an adaptive farm-assist tool that analyzes sensor data for personalized crop insights. Funded
+                by Goa State Innovation Council and published in IEEE Xplore.
+              </p>
+              <div class="chip-list" aria-label="Technologies used">
+                <span class="chip">AI</span>
+                <span class="chip">IoT</span>
+                <span class="chip">Sensor Data</span>
+                <span class="chip">Precision Agriculture</span>
+              </div>
+              <div class="button-row">
+                <a
+                  class="button button-small"
+                  href="https://www.youtube.com/watch?v=OSB92jDg81c"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Demo
+                </a>
+                <a class="button button-small button-secondary" href="#detail-agriculture">Details</a>
+                <a
+                  class="button button-small button-ghost"
+                  href="https://ieeexplore.ieee.org/document/9725672"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Paper
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
 
-					<article>
-						<header>
-							<h2><a href="#">Chatbot<br />(AWS)</a></h2>
-						</header>
-						<a href="#" class="image fit">
-							<img src="images/Chatbot.png" loading="lazy" decoding="async" class="center"
-								alt="AWS Chatbot architecture diagram" style="max-width:100%;" />
-						</a>
-						<p>
-							Built with Amazon Lex, SES, Cognito, etc. Deployable to social media platforms and mobile
-							apps.
-						</p>
-					</article>
+        <div class="detail-grid">
+          <article class="card detail-card" id="detail-tictactoe" data-reveal>
+            <p class="card-label">Project Brief</p>
+            <h3>Autonomous Tic-Tac-Toe Playing Robot</h3>
+            <p>
+              Focused on human-robot interaction with vision-based symbol recognition and robotic actuation. The system
+              interprets hand-drawn game states and translates AI-selected responses into physical arm movement.
+            </p>
+          </article>
+          <article class="card detail-card" id="detail-yolo" data-reveal>
+            <p class="card-label">Project Brief</p>
+            <h3>Object Detection and Classification using Dobot &amp; YOLO</h3>
+            <p>
+              Combined real-time visual detection with robot motion planning to automate object classification and
+              sorting, bridging learned perception with a physical manipulation workflow.
+            </p>
+          </article>
+          <article class="card detail-card" id="detail-maze" data-reveal>
+            <p class="card-label">Project Brief</p>
+            <h3>AI-Driven Maze Solving Robot</h3>
+            <p>
+              Built around top-view scene understanding and coordinated control, this system converts observed maze
+              geometry into a drawable solution path for robotic execution.
+            </p>
+          </article>
+          <article class="card detail-card" id="detail-agriculture" data-reveal>
+            <p class="card-label">Project Brief</p>
+            <h3>Smart Agriculture System using AI and IoT</h3>
+            <p>
+              This work combines data-driven crop support, applied AI, and field-oriented product thinking, and later
+              evolved into a published research contribution in smart agriculture analytics.
+            </p>
+          </article>
+        </div>
 
-					<article>
-						<header>
-							<h2><a href="#">Library Management<br />System</a></h2>
-						</header>
-						<a href="#" class="image fit">
-							<img src="images/LMS.png" loading="lazy" decoding="async" class="center"
-								alt="Library Management System interface" style="height:310px; max-width:100%;" />
-						</a>
-						<p>
-							A full-fledged system with admin login, student signup, book CRUD operations, and more.
-						</p>
-						<ul class="actions special">
-							<li><a href="https://github.com/Amatya27/LibraryManagementSystem" class="button">Check it
-									out!</a></li>
-						</ul>
-					</article>
+        <div class="section-heading section-heading-compact" data-reveal>
+          <p class="eyebrow">Earlier Software Projects</p>
+          <h2>Earlier application and software builds</h2>
+        </div>
 
-					<article>
-						<header>
-							<h2><a href="#">J.A.R.V.I.S.<br />Trivia</a></h2>
-						</header>
-						<a href="#" class="image fit">
-							<img src="images/Jarvis.png" loading="lazy" decoding="async" class="center"
-								alt="JARVIS Trivia Alexa skill screenshot" style="max-width:100%;" />
-						</a>
-						<p>
-							A fun Marvel-themed trivia skill for Alexa. Who doesn’t love JARVIS?
-						</p>
-						<ul class="actions special">
-							<li>
-								<a href="https://skills-store.amazon.in/deeplink/dp/B07Z51B73D?deviceType=app&share&refSuffix=ss_copy"
-									class="button">
-									Alexa Version!
-								</a>
-							</li>
-						</ul>
-					</article>
-				</section>
+        <div class="compact-grid">
+          <article class="compact-card" data-reveal>
+            <div class="media-frame">
+              <button
+                class="video-thumb"
+                type="button"
+                data-youtube-player
+                data-video-id="C0bNyXjidzA"
+                data-video-title="AI-Powered Sentiment Analyzer demo"
+                aria-label="Play AI-Powered Sentiment Analyzer demo"
+              >
+                <img
+                  src="https://i.ytimg.com/vi/C0bNyXjidzA/hqdefault.jpg"
+                  alt="Thumbnail for the AI-Powered Sentiment Analyzer demo"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="video-thumb-badge">YouTube Demo</span>
+                <span class="video-thumb-play" aria-hidden="true">▶</span>
+                <span class="video-thumb-copy">Play Video</span>
+              </button>
+            </div>
+            <div class="compact-card-body">
+              <p class="card-label">AI Application</p>
+              <h3>AI-Powered Sentiment Analyzer</h3>
+              <p>Interactive sentiment analysis tool built to explore AI-assisted hiring workflows and text analysis.</p>
+              <div class="button-row">
+                <a
+                  class="button button-small"
+                  href="https://amatya27.github.io/sentiment-analysis-tool/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Demo
+                </a>
+                <a
+                  class="button button-small button-ghost"
+                  href="https://github.com/Amatya27/sentiment-analysis-tool"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
 
-			</div>
+          <article class="compact-card" data-reveal>
+            <div class="media-frame">
+              <button
+                class="video-thumb"
+                type="button"
+                data-youtube-player
+                data-video-id="sU0c1Tfny_Q"
+                data-video-title="A.G.R.O. the AI powered Chatbot demo"
+                aria-label="Play A.G.R.O. the AI powered Chatbot demo"
+              >
+                <img
+                  src="https://i.ytimg.com/vi/sU0c1Tfny_Q/hqdefault.jpg"
+                  alt="Thumbnail for the A.G.R.O. the AI powered Chatbot demo"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="video-thumb-badge">YouTube Demo</span>
+                <span class="video-thumb-play" aria-hidden="true">▶</span>
+                <span class="video-thumb-copy">Play Video</span>
+              </button>
+            </div>
+            <div class="compact-card-body">
+              <p class="card-label">AI Assistant</p>
+              <h3>A.G.R.O. the AI powered Chatbot</h3>
+              <p>Python chatbot for customer support and guidance using speech recognition, analysis, and synthesis.</p>
+              <div class="button-row">
+                <a
+                  class="button button-small"
+                  href="https://www.youtube.com/watch?v=UBh2DF4_Ql0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Demo
+                </a>
+                <a
+                  class="button button-small button-ghost"
+                  href="https://github.com/Amatya27/AGRO_AI_Assistant"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
 
+          <article class="compact-card" data-reveal>
+            <img
+              src="images/ToDo.PNG"
+              alt="Screenshot of the Mytinerary desktop application"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="compact-card-body">
+              <p class="card-label">Desktop App</p>
+              <h3>Mytinerary</h3>
+              <p>To-do desktop application with an interactive GUI secured by email and password authentication.</p>
+              <div class="button-row">
+                <a
+                  class="button button-small button-ghost"
+                  href="https://github.com/Amatya27/Mytinerary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
 
-			<a href="#top" class="back-to-top scrolly"><i class="fa fa-chevron-up"></i></a>
-			<div class="toggle" role="button" aria-label="Toggle dark mode" tabindex="0">
-			</div>
+          <article class="compact-card" data-reveal>
+            <img
+              src="images/Crappy.jpg"
+              alt="Screenshot of the Crappy Birds Java game"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="compact-card-body">
+              <p class="card-label">Java Game</p>
+              <h3>Crappy Birds</h3>
+              <p>Arcade-style Java game inspired by Flappy Birds with obstacle avoidance gameplay.</p>
+              <div class="button-row">
+                <a
+                  class="button button-small button-ghost"
+                  href="https://github.com/Amatya27/CrappyBirds"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
 
-			<footer id="footer">
-				<section class="split contact">
-					<section>
-						<h3>Email</h3>
-						<p><a href="mailto:amatya27@gmail.com">amatya27@gmail.com</a></p>
-					</section>
-					<section>
-						<h3>Social</h3>
-						<ul class="icons alt">
-							<li><a href="https://www.linkedin.com/in/amatya-k-85152a168/"
-									class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/Amatya27" class="icon brands alt fa-github"><span
-										class="label">GitHub</span></a></li>
-						</ul>
-					</section>
-				</section>
-			</footer>
-		</div>
+          <article class="compact-card" data-reveal>
+            <img
+              src="images/WarZone.jpeg"
+              alt="Screenshot of the War Zone C++ game"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="compact-card-body">
+              <p class="card-label">C++ Game</p>
+              <h3>War Zone</h3>
+              <p>Obstacle-avoidance game built with C++ and Turtle graphics in an endless arcade format.</p>
+              <div class="button-row">
+                <a
+                  class="button button-small button-ghost"
+                  href="https://github.com/Amatya27/WarZone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-	</section>
+          <article class="compact-card" data-reveal>
+            <img
+              src="images/Chatbot.png"
+              alt="Architecture graphic for an AWS chatbot project"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="compact-card-body">
+              <p class="card-label">AWS Prototype</p>
+              <h3>Chatbot (AWS)</h3>
+              <p>Built with Amazon Lex, SES, and Cognito for deployment across social platforms and mobile apps.</p>
+            </div>
+          </article>
+
+          <article class="compact-card" data-reveal>
+            <img
+              src="images/LMS.png"
+              alt="Interface of the Library Management System project"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="compact-card-body">
+              <p class="card-label">Full-Stack App</p>
+              <h3>Library Management System</h3>
+              <p>System with admin login, student signup, and end-to-end book CRUD workflows.</p>
+              <div class="button-row">
+                <a
+                  class="button button-small button-ghost"
+                  href="https://github.com/Amatya27/LibraryManagementSystem"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="compact-card" data-reveal>
+            <img
+              src="images/Jarvis.png"
+              alt="Alexa trivia skill screen for the J.A.R.V.I.S. project"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="compact-card-body">
+              <p class="card-label">Voice Experience</p>
+              <h3>J.A.R.V.I.S. Trivia</h3>
+              <p>Marvel-themed Alexa trivia experience designed as a voice-first interactive skill.</p>
+              <div class="button-row">
+                <a
+                  class="button button-small"
+                  href="https://skills-store.amazon.in/deeplink/dp/B07Z51B73D?deviceType=app&share&refSuffix=ss_copy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Demo
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Skills</p>
+          <h2>Technical strengths across intelligent systems and software delivery</h2>
+        </div>
+        <div class="skill-grid">
+          <article class="card" data-reveal>
+            <p class="card-label">Programming</p>
+            <h3>Languages</h3>
+            <div class="chip-list">
+              <span class="chip">Python</span>
+              <span class="chip">C++</span>
+              <span class="chip">Java</span>
+              <span class="chip">MATLAB</span>
+              <span class="chip">JavaScript</span>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <p class="card-label">AI / ML</p>
+            <h3>Modeling and learning</h3>
+            <div class="chip-list">
+              <span class="chip">TensorFlow</span>
+              <span class="chip">PyTorch</span>
+              <span class="chip">Scikit-learn</span>
+              <span class="chip">Reinforcement Learning</span>
+              <span class="chip">MDPs</span>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <p class="card-label">Computer Vision</p>
+            <h3>Visual perception</h3>
+            <div class="chip-list">
+              <span class="chip">OpenCV</span>
+              <span class="chip">YOLOv5</span>
+              <span class="chip">Object Detection</span>
+              <span class="chip">Image Segmentation</span>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <p class="card-label">Robotics</p>
+            <h3>Applied robotics</h3>
+            <div class="chip-list">
+              <span class="chip">ROS</span>
+              <span class="chip">Dobot SDK</span>
+              <span class="chip">pydobot</span>
+              <span class="chip">pydobotplus</span>
+              <span class="chip">Kinematics</span>
+              <span class="chip">Motion Planning</span>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <p class="card-label">Web &amp; Backend</p>
+            <h3>Production delivery</h3>
+            <div class="chip-list">
+              <span class="chip">React</span>
+              <span class="chip">Spring Boot</span>
+              <span class="chip">REST APIs</span>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <p class="card-label">Tools</p>
+            <h3>Workflow and visualization</h3>
+            <div class="chip-list">
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">Matplotlib</span>
+              <span class="chip">OpenCV Visualization</span>
+              <span class="chip">Data Plotting</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Experience</p>
+          <h2>Industry and training experience grounded in practical delivery</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-card" data-reveal>
+            <div class="timeline-meta">
+              <span class="timeline-date">Aug 2024 - May 2025</span>
+              <span class="pill pill-muted">Education + Training</span>
+            </div>
+            <h3>Technical Trainer, 6 Technical Training Regiment, Indian Army</h3>
+            <ul class="timeline-list">
+              <li>Led technical training programs in AI, cybersecurity, and databases for Army personnel.</li>
+              <li>Designed hands-on learning modules integrating applied robotics and real-world scenarios.</li>
+              <li>Mentored trainees to improve operational readiness and technical confidence.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-card" data-reveal>
+            <div class="timeline-meta">
+              <span class="timeline-date">Aug 2022 - Jan 2024</span>
+              <span class="pill pill-muted">Software Engineering</span>
+            </div>
+            <h3>Software Developer, Persistent Systems</h3>
+            <ul class="timeline-list">
+              <li>
+                Designed and deployed enterprise-grade React and Spring Boot platforms, reducing manual reporting
+                workload by 40%.
+              </li>
+              <li>Built REST APIs for AI-based skill-job matching and hiring analytics.</li>
+              <li>
+                Collaborated with cross-functional engineering and product teams to deliver production-grade,
+                data-driven systems under tight timelines.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Research</p>
+          <h2>Published work in AI for agriculture decision support</h2>
+        </div>
+        <article class="spotlight-card" data-reveal>
+          <img
+            src="images/research.jpg"
+            alt="IEEE Xplore listing for the smart agriculture research publication"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="spotlight-content">
+            <p class="card-label">IEEE Xplore, 2022</p>
+            <h3>Design of Smart Agriculture Systems using Artificial Intelligence and Big Data Analytics</h3>
+            <p class="spotlight-author">Author: Amatya Katyayan</p>
+            <p>
+              Research focused on AI and big data analytics for smart agriculture systems and crop decision support.
+            </p>
+            <div class="button-row">
+              <a
+                class="button"
+                href="https://ieeexplore.ieee.org/document/9725672"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Paper
+              </a>
+              <a class="button button-secondary" href="elements.html">Details</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="achievements">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Achievements</p>
+          <h2>Recognition, student leadership, and public-facing technical work</h2>
+        </div>
+
+        <div class="achievement-grid">
+          <article class="achievement-card" data-reveal>
+            <p class="card-label">Competition</p>
+            <h3>IEEE CSPL 2021 - First Place</h3>
+          </article>
+          <article class="achievement-card" data-reveal>
+            <p class="card-label">Innovation</p>
+            <h3>Texas Instruments India Innovation Contest - Quarter Finalist</h3>
+          </article>
+          <article class="achievement-card" data-reveal>
+            <p class="card-label">Academic</p>
+            <h3>College Topper, Goa University</h3>
+          </article>
+          <article class="achievement-card" data-reveal>
+            <p class="card-label">Campus Role</p>
+            <h3>Student Experience Assistant, ISSC, ASU</h3>
+            <p>Supported international arrivals, airport reception, and onboarding.</p>
+          </article>
+          <article class="achievement-card" data-reveal>
+            <p class="card-label">Outreach</p>
+            <h3>Campus Ambassador, TCS</h3>
+          </article>
+          <article class="achievement-card" data-reveal>
+            <p class="card-label">Creator</p>
+            <h3>Tech YouTube Channel Creator</h3>
+            <p>Creator of the “Amatya Katyayan” tech YouTube channel.</p>
+          </article>
+        </div>
+
+        <div class="evidence-grid">
+          <article class="media-card" data-reveal>
+            <div class="slideshow-card" data-slideshow data-interval="4200">
+              <div class="slideshow-viewport" aria-live="polite">
+                <figure class="slideshow-slide is-active" data-caption="Guest Lecture on Modern Cyberattack Techniques">
+                  <img
+                    src="images/teach1.jpg"
+                    alt="Amatya Katyayan conducting a guest lecture on modern cyberattack techniques"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="slideshow-slide" data-caption="Seminar on ChatGPT and its use cases">
+                  <img
+                    src="images/teach6.jpg"
+                    alt="Seminar session covering ChatGPT and applied use cases"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="slideshow-slide" data-caption="AI ethics and responsible use">
+                  <img
+                    src="images/teach7.jpg"
+                    alt="Training session on the power of AI and the need for ethics in AI"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="slideshow-slide" data-caption="Applications of drones">
+                  <img
+                    src="images/teach8.jpg"
+                    alt="Seminar on practical applications of drones"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="slideshow-slide" data-caption="Recent advancements in artificial intelligence">
+                  <img
+                    src="images/teach9.jpg"
+                    alt="Session on recent advancements in artificial intelligence"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="slideshow-slide" data-caption="Recent advancements in artificial intelligence, continued">
+                  <img
+                    src="images/teach10.jpg"
+                    alt="Follow-up session on recent advancements in artificial intelligence"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="slideshow-slide" data-caption="Workshop on generative AI tools">
+                  <img
+                    src="images/teach2.jpg"
+                    alt="Workshop on generative AI tools"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="slideshow-slide" data-caption="Hands-on generative AI workshop">
+                  <img
+                    src="images/teach3.jpg"
+                    alt="Hands-on generative AI workshop session"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="slideshow-slide" data-caption="Deepfake technology: benefits and risks" style="--slide-position: center 18%;">
+                  <img
+                    src="images/teach4.jpg"
+                    alt="Seminar on deepfake technology, including its advantages and risks"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="slideshow-slide" data-caption="Deepfake technology workshop follow-up">
+                  <img
+                    src="images/teach5.jpg"
+                    alt="Follow-up workshop image from the deepfake technology session"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </div>
+              <div class="slideshow-bar">
+                <p class="slideshow-caption">Guest Lecture on Modern Cyberattack Techniques</p>
+                <div class="slideshow-dots" aria-label="Training photo navigation"></div>
+              </div>
+              <div class="slideshow-controls">
+                <div class="slideshow-buttons">
+                  <button class="slideshow-button" type="button" data-slide-action="prev" aria-label="Previous training photo">‹</button>
+                  <button class="slideshow-button slideshow-button-pause" type="button" data-slide-action="pause" aria-label="Pause slideshow">Pause</button>
+                  <button class="slideshow-button" type="button" data-slide-action="next" aria-label="Next training photo">›</button>
+                </div>
+                <p class="slideshow-index" aria-live="polite">1 / 10</p>
+              </div>
+            </div>
+            <div class="media-card-body">
+              <p class="card-label">Teaching and Workshops</p>
+              <h3>Applied technical training</h3>
+              <p>Hands-on seminars and workshops across AI, robotics, cybersecurity, and emerging technology topics.</p>
+              <a class="text-link" href="profile.html">View more highlights</a>
+            </div>
+          </article>
+          <article class="media-card media-card-prominent" data-reveal>
+            <img
+              src="images/cspl.jpg"
+              alt="Banner from the IEEE CSPL 2021 competition"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="media-card-body">
+              <p class="card-label">Competitive Coding</p>
+              <h3>Programming league and hackathon record</h3>
+              <p>Competition history spanning IEEE CSPL, Tech Coders, Code Heist, and Newton School contests.</p>
+              <a class="text-link" href="generic.html">See coding highlights</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Contact</p>
+          <h2>Open to robotics, AI, and software engineering conversations</h2>
+        </div>
+        <div class="contact-grid">
+          <article class="contact-card" data-reveal>
+            <p class="card-label">Best way to reach me</p>
+            <p>Use the contact form below or connect with me on LinkedIn for professional outreach.</p>
+          </article>
+          <article class="contact-card" data-reveal>
+            <p class="card-label">LinkedIn</p>
+            <a
+              href="https://www.linkedin.com/in/amatya-katyayan/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin.com/in/amatya-katyayan
+            </a>
+          </article>
+          <article class="contact-card" data-reveal>
+            <p class="card-label">GitHub</p>
+            <a href="https://github.com/amatya27" target="_blank" rel="noopener noreferrer">github.com/amatya27</a>
+          </article>
+          <article class="contact-card" data-reveal>
+            <p class="card-label">Portfolio</p>
+            <a href="https://amatya27.github.io/" target="_blank" rel="noopener noreferrer">amatya27.github.io</a>
+          </article>
+        </div>
+
+        <div class="updates-grid" data-reveal>
+          <article class="card updates-card">
+            <p class="card-label">Latest Updates</p>
+            <h3>Recent activity on LinkedIn</h3>
+            <p>
+              I share project demos, research milestones, technical workshops, and professional updates on LinkedIn.
+            </p>
+            <div class="button-row">
+              <a
+                class="button button-small"
+                href="https://www.linkedin.com/in/amatya-katyayan/recent-activity/all/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View latest activity
+              </a>
+              <a
+                class="button button-small button-secondary"
+                href="https://www.linkedin.com/in/amatya-katyayan/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Connect on LinkedIn
+              </a>
+            </div>
+          </article>
+          <article class="card updates-card">
+            <p class="card-label">What I share</p>
+            <h3>Projects, research, and milestones</h3>
+            <div class="chip-list">
+              <span class="chip">Project demos</span>
+              <span class="chip">Research updates</span>
+              <span class="chip">Workshop highlights</span>
+              <span class="chip">Professional milestones</span>
+            </div>
+            <p class="form-note">
+              For the most current updates, LinkedIn is where I share ongoing work, milestones, and professional activity.
+            </p>
+          </article>
+        </div>
+
+        <div class="contact-layout">
+          <article class="card form-card" id="contact-form" data-reveal>
+            <p class="card-label">Contact Form</p>
+            <h3>Send a message</h3>
+            <p class="form-note">
+              Use this form for opportunities, research discussions, collaboration, or professional outreach.
+            </p>
+            <form method="POST" data-formsubmit data-next-path="thanks.html">
+              <input type="hidden" name="_subject" value="New portfolio contact request" />
+              <input type="hidden" name="_template" value="table" />
+              <input
+                type="hidden"
+                name="_autoresponse"
+                value="Thank you for reaching out through my portfolio. I have received your message and will get back to you soon."
+              />
+              <input type="hidden" name="_next" value="" />
+              <input type="text" name="_honey" class="sr-only-field" tabindex="-1" autocomplete="off" />
+              <input type="hidden" name="Inquiry Type" value="General outreach" />
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="contact-name">Full name</label>
+                  <input class="form-input" id="contact-name" name="name" type="text" autocomplete="name" required />
+                </div>
+                <div class="form-field">
+                  <label for="contact-email">Email</label>
+                  <input class="form-input" id="contact-email" name="email" type="email" autocomplete="email" required />
+                </div>
+                <div class="form-field">
+                  <label for="contact-purpose">Purpose</label>
+                  <select class="form-input" id="contact-purpose" name="Purpose" required>
+                    <option value="Internship or full-time opportunity">Internship or full-time opportunity</option>
+                    <option value="Research collaboration">Research collaboration</option>
+                    <option value="Project discussion">Project discussion</option>
+                    <option value="Networking">Networking</option>
+                    <option value="Other professional inquiry">Other professional inquiry</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="contact-phone">Phone number (optional)</label>
+                  <input class="form-input" id="contact-phone" name="Phone" type="tel" autocomplete="tel" />
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="contact-message">Message</label>
+                <textarea
+                  class="form-input"
+                  id="contact-message"
+                  name="message"
+                  rows="6"
+                  placeholder="Share a few details about why you are reaching out."
+                  required
+                ></textarea>
+              </div>
+              <div class="contact-form-actions">
+                <button class="button" type="submit">Send Message</button>
+                <p class="form-note">LinkedIn messages are also welcome for a quick first touch.</p>
+              </div>
+            </form>
+          </article>
+
+          <article class="card form-card" id="resume-request" data-reveal>
+            <p class="card-label">Resume Request</p>
+            <h3>Request the latest resume</h3>
+            <p class="form-note">
+              Share a few professional details and the latest resume will open after submission.
+            </p>
+            <form method="POST" data-formsubmit data-next-path="assets/resume/Amatya_Katyayan_Resume.pdf">
+              <input type="hidden" name="_subject" value="Resume request from portfolio" />
+              <input type="hidden" name="_template" value="table" />
+              <input
+                type="hidden"
+                name="_autoresponse"
+                value="Thank you for your interest. The latest resume should open after your submission, and I appreciate you taking the time to share your details."
+              />
+              <input type="hidden" name="_next" value="" />
+              <input type="text" name="_honey" class="sr-only-field" tabindex="-1" autocomplete="off" />
+              <input type="hidden" name="Inquiry Type" value="Resume request" />
+              <div class="form-field">
+                <label for="resume-name">Full name</label>
+                <input class="form-input" id="resume-name" name="name" type="text" autocomplete="name" required />
+              </div>
+              <div class="form-field">
+                <label for="resume-email">Work or academic email</label>
+                <input class="form-input" id="resume-email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div class="form-field">
+                <label for="resume-organization">Organization or university</label>
+                <input class="form-input" id="resume-organization" name="Organization" type="text" autocomplete="organization" required />
+              </div>
+              <div class="form-field">
+                <label for="resume-purpose">Purpose</label>
+                <select class="form-input" id="resume-purpose" name="Purpose" required>
+                  <option value="Recruitment review">Recruitment review</option>
+                  <option value="Research opportunity">Research opportunity</option>
+                  <option value="Collaboration">Collaboration</option>
+                  <option value="Networking">Networking</option>
+                </select>
+              </div>
+              <div class="contact-form-actions">
+                <button class="button" type="submit">Request Resume</button>
+                <p class="form-note">Helpful context for professional follow-up.</p>
+              </div>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="back-to-top" href="#top" aria-label="Back to top">↑</a>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-title">Amatya Katyayan</p>
+        <p>Robotics, AI, computer vision, and production software.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">Copyright <span id="current-year"></span> Amatya Katyayan</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
 </body>
-
-
 </html>

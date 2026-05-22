@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amatya27.github.io/sitemap.xml

@@ -1,240 +1,266 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Amatya Katyayan – Resume</title>
-    <link rel="shortcut icon" href="logo.ico" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="keywords" content="Amatya Katyayan">
-    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css" />
-    </noscript>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Achievements | Amatya Katyayan</title>
+  <meta
+    name="description"
+    content="Achievements and activity highlights for Amatya Katyayan across technical training, competitions, campus leadership, and outreach."
+  />
+  <link rel="canonical" href="https://amatya27.github.io/profile.html" />
+  <link rel="icon" href="logo.ico" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <meta name="theme-color" content="#081121" />
+  <script>
+    (function () {
+      var theme = "dark";
+      try {
+        var storedTheme = localStorage.getItem("portfolio-theme");
+        var systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        theme = storedTheme || systemTheme;
+      } catch (error) {
+        theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.dataset.theme = theme;
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
+<body id="top" data-page="achievements">
+  <a class="skip-link" href="#content">Skip to content</a>
 
-<body class="is-preload">
-    <section class="sec">
-        <div id="wrapper" class="fade-in">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#home" aria-label="Amatya Katyayan home">
+        <span class="brand-mark brand-mark-avatar">
+          <img class="brand-avatar" src="images/avataaars.png" width="80" height="80" alt="" />
+        </span>
+        <span class="brand-text">Amatya Katyayan</span>
+      </a>
+      <div class="header-actions">
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#research">Research</a>
+          <a href="index.html#achievements">Achievements</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-            <div id="intro">
-                <h1>Welcome To My Web Portfolio</h1>
-                <h2>Amatya Katyayan</h2>
-                <p>A place where you can catch the latest updates on my projects and achievements!</p>
-                <ul class="actions">
-                    <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-                </ul>
-            </div>
-
-            <!-- Header -->
-            <header id="header">
-                <a href="index.html" class="logo">Shazam!</a>
-            </header>
-
-            <!-- Nav (Resume active) -->
-            <nav id="nav">
-                <ul class="links">
-                    <li><a href="index.html">My Projects</a></li>
-                    <li><a href="generic.html">Coding Competitions</a></li>
-                    <li><a href="elements.html">Research</a></li>
-                    <li><a href="fyp.html">Final Year Project</a></li>
-                    <li class="active"><a href="profile.html">Achievements</a></li>
-                </ul>
-                <ul class="icons">
-                    <li><a href="https://www.linkedin.com/in/amatya-k-85152a168/" class="icon brands fa-linkedin"><span
-                                class="label">LinkedIn</span></a></li>
-                    <li><a href="https://github.com/Amatya27" class="icon brands fa-github"><span
-                                class="label">GitHub</span></a></li>
-                </ul>
-            </nav>
-            <div id="main">
-
-                <!-- 1. Hero + Download PDF -->
-                <section class="post featured">
-                    <header class="major featured-header">
-                        <img src="images/wise.gif" alt="Wise owl mascot" loading="lazy" decoding="async" />
-                        <div class="featured-text">
-                            <h2>Achievements &amp; Highlights</h2>
-                            <p>Download my full resume or explore key highlights below.</p>
-                        </div>
-                    </header>
-                    <div class="download-cta" style="text-align: center; margin-bottom: 2rem;">
-                        <a href="resume.pdf" class="button large primary" download>
-                            <i class="fa fa-download"></i> Download Full Resume (PDF)
-                        </a>
-                    </div>
-                </section>
-
-
-
-                <!-- 2. Recommendation -->
-                <section class="post">
-                    <header class="major">
-                        <h3><b>Recommendation</b></h3>
-                    </header>
-                    <div class="image fit">
-                        <img src="images/navy_reco.jpg" alt="Indian Navy SSC (IT) Jan 2024 recommendation" />
-                    </div>
-                    <div class="recommendation-text"
-                        style="max-width: 900px; margin: 2rem auto; text-align: justify; padding: 0 1rem;">
-                        After five intense days of psychological evaluations, group tasks and personal interviews, I
-                        emerged as one of the three recommended candidates from over 120 aspirants for the
-                        Indian Navy’s SSC (IT) course. This rigorous SSB process—designed to test leadership,
-                        adaptability and problem-solving under pressure—makes this recommendation a proud testament to
-                        resilience and performance.
-                    </div>
-                </section>
-
-
-                <!-- 3. Teaching Slideshow -->
-                <section class="post">
-                    <header class="major">
-                        <h3><b>Conducting Trainings and Workshops</b></h3>
-                    </header>
-                    <div class="slideshow-container">
-                        <div class="slideshow">
-                            <img src="images/teach1.jpg" class="active"
-                                alt="Guest Lecture on Modern Cyberattack Techniques (2024–25)" />
-                            <img src="images/teach6.jpg" alt="Seminar on ChatGPT & Its Use Cases" />
-                            <img src="images/teach7.jpg" alt="Session on the Power of AI & the Need for Ethics in AI" />
-                            <img src="images/teach8.jpg" alt="Seminar on Applications of Drones" />
-                            <img src="images/teach9.jpg"
-                                alt="Session on Recent Advancements in Artificial Intelligence (Part 1)" />
-                            <img src="images/teach10.jpg"
-                                alt="Session on Recent Advancements in Artificial Intelligence (Part 2)" />
-                            <img src="images/teach2.jpg" alt="Workshop on Generative AI & Tools" />
-                            <img src="images/teach3.jpg" alt="Workshop on Generative AI & Tools" />
-                            <img src="images/teach4.jpg" alt="Seminar on Deepfake Technology – Advantages & Risks" />
-                            <img src="images/teach5.jpg" alt="Seminar on Deepfake Technology – Advantages & Risks" />
-                        </div>
-
-                        <!-- Caption -->
-                        <div class="caption">Practical Training, Seminars, and workshop</div>
-                        <div class="slideshow-controls">
-                            <button class="prev" aria-label="Previous slide">❮</button>
-                            <button class="pause" aria-label="Pause slideshow">❚❚</button>
-                            <button class="next" aria-label="Next slide">❯</button>
-                        </div>
-                    </div>
-                </section>
-
-
-                <!-- 4. Key Skills (progress bars) -->
-                <section class="post">
-                    <header class="major">
-                        <h3><b>Skills & Technologies</b></h3>
-                    </header>
-                    <ul class="skills">
-                        <li><span>SQL</span>
-                            <div class="bar">
-                                <div style="width:95%"></div>
-                            </div>
-                        </li>
-                        <li><span>C++</span>
-                            <div class="bar">
-                                <div style="width:90%"></div>
-                            </div>
-                        </li>
-                        <li><span>Python</span>
-                            <div class="bar">
-                                <div style="width:80%"></div>
-                            </div>
-                        </li>
-                        <li><span>Java</span>
-                            <div class="bar">
-                                <div style="width:75%"></div>
-                            </div>
-                        </li>
-                        <li><span>AWS</span>
-                            <div class="bar">
-                                <div style="width:70%"></div>
-                            </div>
-                        </li>
-                        <!-- etc. -->
-                    </ul>
-                </section>
-
-                <!-- 5. Experience Highlights -->
-                <section class="post">
-                    <header class="major">
-                        <h3><b>Work Experience</b></h3>
-                    </header>
-                    <ul class="experience">
-                        <li><b>Software Developer @ Persistent Systems</b> (Aug 2022 – Jan 2024)</li>
-                        <li><b>AI Intern @ Cloud Counselage</b> (Dec 2020 – Jan 2021)</li>
-                        <!-- etc. -->
-                    </ul>
-
-                    <div class="slideshow-container">
-                        <div class="slideshow">
-                            <img src="images/achievement1.jpeg" class="active"
-                                alt="Successfully completed the GenAI Practitioners Course – Persistent Systems" />
-                            <img src="images/achievement2.jpeg"
-                                alt="Recognition for performance in the BFSI Automation Project – Persistent Systems" />
-                            <img src="images/achievement3.jpeg"
-                                alt="Developed an AI-powered customer service chatbot during AI Internship – Cloud Counselage" />
-                            <img src="images/achievement4.jpeg"
-                                alt="Awarded for contributions as Campus Ambassador – TCS India" />
-                            <img src="images/achievement5.jpeg"
-                                alt="Reached quarter-finals stage in ideation of a bionic-surveillance drone" />
-                        </div>
-
-                        <!-- Caption -->
-                        <div class="caption">Conducting AI workshop</div>
-                        <div class="slideshow-controls">
-                            <button class="prev" aria-label="Previous slide">❮</button>
-                            <button class="pause" aria-label="Pause slideshow">❚❚</button>
-                            <button class="next" aria-label="Next slide">❯</button>
-                        </div>
-                    </div>
-
-                </section>
-
-                <!-- 6. Full Resume Preview -->
-                <section class="post">
-                    <header class="major">
-                        <h3><b>Resume Preview</b></h3>
-                    </header>
-                    <img src="images/resume-preview.png" alt="Resume preview" style="width:100%;" />
-                </section>
-
-            </div>
-
-            <!-- Dark-mode toggle & Back to top (if you have them) -->
-            <div class="toggle" role="button" aria-label="Toggle dark mode" tabindex="0">
-            </div>
-            <a href="#top" class="back-to-top scrolly"><i class="fa fa-chevron-up"></i></a>
-
-            <footer id="footer">
-
-                <section class="split contact">
-                    <section>
-                        <h3>Email</h3>
-                        <p><a href="mailto:amatya27@gmail.com">amatya27@gmail.com</a></p>
-                    </section>
-                    <section>
-                        <h3>Social</h3>
-                        <ul class="icons alt">
-                            <li><a href="https://www.linkedin.com/in/amatya-k-85152a168/"
-                                    class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
-                            <li><a href="https://github.com/Amatya27?tab=repositories"
-                                    class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-                        </ul>
-                    </section>
-                </section>
-            </footer>
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/jquery.scrollex.min.js"></script>
-            <script src="assets/js/jquery.scrolly.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
-            <!-- Dark mode toggle, Back to Top, Footer, Scripts… -->
+  <main id="content">
+    <section class="section page-hero">
+      <div class="container page-hero-grid">
+        <div data-reveal>
+          <p class="eyebrow">Achievements &amp; Activities</p>
+          <h1>Technical training, recognition, and community-facing work</h1>
+          <p class="page-intro">
+            Alongside engineering work, I have led technical workshops, supported student onboarding, and earned
+            recognition across academics, innovation, and outreach.
+          </p>
+          <div class="button-row">
+            <a class="button" href="index.html#resume-request">Request Resume</a>
+            <a class="button button-secondary" href="index.html#achievements">Back to Homepage</a>
+          </div>
         </div>
+        <article class="card" data-reveal>
+          <p class="card-label">Campus Engagement</p>
+          <h2>Student Experience Assistant, ISSC, ASU</h2>
+          <p>Supported international arrivals, airport reception, and onboarding for students at ASU.</p>
+        </article>
+      </div>
     </section>
-</body>
 
+    <section class="section section-tight">
+      <div class="container">
+        <div class="achievement-grid">
+          <article class="achievement-card" data-reveal>
+            <p class="card-label">Competition</p>
+            <h3>IEEE CSPL 2021 - First Place</h3>
+          </article>
+          <article class="achievement-card" data-reveal>
+            <p class="card-label">Innovation</p>
+            <h3>Texas Instruments India Innovation Contest - Quarter Finalist</h3>
+          </article>
+          <article class="achievement-card" data-reveal>
+            <p class="card-label">Academic</p>
+            <h3>College Topper, Goa University</h3>
+          </article>
+          <article class="achievement-card" data-reveal>
+            <p class="card-label">Campus</p>
+            <h3>Campus Ambassador, TCS</h3>
+          </article>
+          <article class="achievement-card" data-reveal>
+            <p class="card-label">Creator</p>
+            <h3>Tech YouTube Channel Creator</h3>
+          </article>
+          <article class="achievement-card" data-reveal>
+            <p class="card-label">Training</p>
+            <h3>Technical workshops and seminars</h3>
+            <p>Delivered hands-on sessions spanning AI, deepfakes, drones, and cybersecurity topics.</p>
+          </article>
+        </div>
+
+        <div class="feature-grid">
+          <article class="media-card" data-reveal>
+            <div class="slideshow-card" data-slideshow data-interval="4200">
+              <div class="slideshow-viewport" aria-live="polite">
+                <figure class="slideshow-slide is-active" data-caption="Guest Lecture on Modern Cyberattack Techniques">
+                  <img
+                    src="images/teach1.jpg"
+                    alt="Amatya Katyayan leading a guest lecture on modern cyberattack techniques"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="slideshow-slide" data-caption="Seminar on ChatGPT and its use cases">
+                  <img
+                    src="images/teach6.jpg"
+                    alt="Teaching session on ChatGPT and its practical use cases"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="slideshow-slide" data-caption="AI ethics and responsible deployment">
+                  <img
+                    src="images/teach7.jpg"
+                    alt="Session on AI capability and ethics"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="slideshow-slide" data-caption="Applications of drones">
+                  <img
+                    src="images/teach8.jpg"
+                    alt="Seminar on applications of drones"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="slideshow-slide" data-caption="Recent advancements in artificial intelligence">
+                  <img
+                    src="images/teach9.jpg"
+                    alt="Session on recent advancements in artificial intelligence"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="slideshow-slide" data-caption="Recent advancements in artificial intelligence, continued">
+                  <img
+                    src="images/teach10.jpg"
+                    alt="Continuation of the recent advancements in artificial intelligence session"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="slideshow-slide" data-caption="Workshop on generative AI tools">
+                  <img
+                    src="images/teach2.jpg"
+                    alt="Workshop on generative AI tools"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="slideshow-slide" data-caption="Hands-on generative AI workshop">
+                  <img
+                    src="images/teach3.jpg"
+                    alt="Hands-on generative AI workshop"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="slideshow-slide" data-caption="Deepfake technology: benefits and risks" style="--slide-position: center 18%;">
+                  <img
+                    src="images/teach4.jpg"
+                    alt="Seminar on deepfake technology and its benefits and risks"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="slideshow-slide" data-caption="Deepfake technology workshop follow-up">
+                  <img
+                    src="images/teach5.jpg"
+                    alt="Workshop follow-up image from the deepfake technology session"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </div>
+              <div class="slideshow-bar">
+                <p class="slideshow-caption">Guest Lecture on Modern Cyberattack Techniques</p>
+                <div class="slideshow-dots" aria-label="Training photo navigation"></div>
+              </div>
+              <div class="slideshow-controls">
+                <div class="slideshow-buttons">
+                  <button class="slideshow-button" type="button" data-slide-action="prev" aria-label="Previous training photo">‹</button>
+                  <button class="slideshow-button slideshow-button-pause" type="button" data-slide-action="pause" aria-label="Pause slideshow">Pause</button>
+                  <button class="slideshow-button" type="button" data-slide-action="next" aria-label="Next training photo">›</button>
+                </div>
+                <p class="slideshow-index" aria-live="polite">1 / 10</p>
+              </div>
+            </div>
+            <div class="media-card-body">
+              <p class="card-label">Teaching</p>
+              <h3>Workshops and seminars</h3>
+              <p>Applied sessions and lectures focused on AI, cyber awareness, and emerging technology.</p>
+            </div>
+          </article>
+
+          <article class="media-card" data-reveal>
+            <img
+              src="images/navy_reco.jpg"
+              alt="Indian Navy recommendation letter or selection highlight"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="media-card-body">
+              <p class="card-label">Selection Highlight</p>
+              <h3>Indian Navy SSC (IT) recommendation</h3>
+              <p>
+                Recommended for the Indian Navy SSC (IT) selection process after a rigorous multi-stage evaluation
+                focused on leadership, adaptability, and problem-solving.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="back-to-top" href="#top" aria-label="Back to top">↑</a>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-title">Amatya Katyayan</p>
+        <p>Robotics, AI, computer vision, and production software.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#research">Research</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <p class="footer-copy">Copyright <span id="current-year"></span> Amatya Katyayan</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+</body>
 </html>

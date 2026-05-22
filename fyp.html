@@ -1,157 +1,199 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Hola Amigos! </title>
-	<link rel="shortcut icon" type="image/x-icon" href="logo.ico" />
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="keywords" content="Amatya Katyayan">
-	<meta property="og:title" content="Amatya Katyayan">
-	<meta property="og:description" content="-Web Portfolio-">
-	<meta property="og:image"
-		content="https://github.com/Amatya27/Amatya27.github.io/blob/master/images/avataaars.png?raw=true">
-	<meta property="og:url" content="https://amatya27.github.io/">
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-		integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Agriculture Project | Amatya Katyayan</title>
+  <meta
+    name="description"
+    content="Project page for the Smart Agriculture System using AI and IoT by Amatya Katyayan, including the project overview, grant support, and recognition."
+  />
+  <link rel="canonical" href="https://amatya27.github.io/fyp.html" />
+  <link rel="icon" href="logo.ico" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <meta name="theme-color" content="#081121" />
+  <script>
+    (function () {
+      var theme = "dark";
+      try {
+        var storedTheme = localStorage.getItem("portfolio-theme");
+        var systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        theme = storedTheme || systemTheme;
+      } catch (error) {
+        theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.dataset.theme = theme;
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
+<body id="top" data-page="agriculture">
+  <a class="skip-link" href="#content">Skip to content</a>
 
-<body class="is-preload">
-	<section class="sec">
-		<!-- Wrapper -->
-		<div id="wrapper" class="fade-in">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#home" aria-label="Amatya Katyayan home">
+        <span class="brand-mark brand-mark-avatar">
+          <img class="brand-avatar" src="images/avataaars.png" width="80" height="80" alt="" />
+        </span>
+        <span class="brand-text">Amatya Katyayan</span>
+      </a>
+      <div class="header-actions">
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#research">Research</a>
+          <a href="index.html#achievements">Achievements</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-			<!-- Intro -->
-			<div id="intro">
-				<h1>Welcome To My Web Portfolio<br /></h1>
-				<h2>Amatya Katyayan</h2>
-				<p>A place where you can catch the latest updates on my projects and achievements!</p>
-				<ul class="actions">
-					<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-				</ul>
-			</div>
+  <main id="content">
+    <section class="section page-hero">
+      <div class="container page-hero-grid">
+        <div data-reveal>
+          <p class="eyebrow">Project Detail</p>
+          <h1>Smart Agriculture System using AI and IoT</h1>
+          <p class="page-intro">
+            This project combines sensor-informed crop support, AI-assisted analysis, and practical decision-making
+            for agriculture workflows.
+          </p>
+          <div class="button-row">
+            <a
+              class="button"
+              href="https://www.youtube.com/watch?v=OSB92jDg81c"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Demo
+            </a>
+            <a
+              class="button button-secondary"
+              href="https://ieeexplore.ieee.org/document/9725672"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Paper
+            </a>
+            <a class="button button-ghost" href="grant.pdf" target="_blank" rel="noopener noreferrer">Grant PDF</a>
+          </div>
+        </div>
+        <article class="card" data-reveal>
+          <p class="card-label">Project Areas</p>
+          <div class="chip-list">
+            <span class="chip">AI</span>
+            <span class="chip">IoT</span>
+            <span class="chip">Sensor Data</span>
+            <span class="chip">Precision Agriculture</span>
+          </div>
+        </article>
+      </div>
+    </section>
 
-			<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="logo">Shazam!</a>
-			</header>
+    <section class="section section-tight">
+      <div class="container">
+        <article class="spotlight-card" data-reveal>
+          <div class="media-frame">
+            <button
+              class="video-thumb"
+              type="button"
+              data-youtube-player
+              data-video-id="OSB92jDg81c"
+              data-video-title="Smart Agriculture System using AI and IoT demo"
+              aria-label="Play Smart Agriculture System using AI and IoT demo"
+            >
+              <img
+                src="https://i.ytimg.com/vi/OSB92jDg81c/hqdefault.jpg"
+                alt="Thumbnail for the Smart Agriculture System using AI and IoT demo"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="video-thumb-badge">YouTube Demo</span>
+              <span class="video-thumb-play" aria-hidden="true">▶</span>
+              <span class="video-thumb-copy">Play Video</span>
+            </button>
+          </div>
+          <div class="spotlight-content">
+            <p class="card-label">Overview</p>
+            <h2>AI-driven agriculture assistance</h2>
+            <p>
+              The project explores how AI, analytics, and connected sensing can support personalized crop insights and
+              practical farming assistance.
+            </p>
+            <p>
+              It later became part of a broader research contribution published through IEEE Xplore and was supported by
+              the Goa State Innovation Council.
+            </p>
+          </div>
+        </article>
 
-			<!-- Nav -->
-			<nav id="nav">
-				<ul class="links">
-					<li><a href="index.html">My Projects</a></li>
-					<li><a href="generic.html">Coding Competitions</a></li>
-					<li><a href="elements.html">Research</a></li>
-					<li class="active"><a href="fyp.html">Final Year Project</a></li>
-					<li><a href="profile.html">Achievements</a></li>
-				</ul>
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/amatya-k-85152a168/" class="icon brands fa-linkedin"><span
-								class="label">LinkedIn</span></a></li>
-					<li><a href="https://github.com/Amatya27?tab=repositories" class="icon brands fa-github"><span
-								class="label">GitHub</span></a></li>
-				</ul>
-			</nav>
+        <div class="feature-grid">
+          <article class="media-card" data-reveal>
+            <img
+              src="images/grant.png"
+              alt="Goa State Innovation Council prototyping grant certificate"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="media-card-body">
+              <p class="card-label">Grant Support</p>
+              <h3>Goa State Innovation Council</h3>
+              <p>Prototyping grant support for the smart agriculture system initiative.</p>
+            </div>
+          </article>
 
+          <article class="media-card" data-reveal>
+            <img
+              src="images/fyp.jpg"
+              alt="Final year project competition certificate"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="media-card-body">
+              <p class="card-label">Recognition</p>
+              <h3>Tech Mania 2022 - Second Place</h3>
+              <p>Recognized in the final year project competition for the smart agriculture work.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <a class="back-to-top" href="#top" aria-label="Back to top">↑</a>
 
-			<!-- Main -->
-			<div id="main">
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-title">Amatya Katyayan</p>
+        <p>Robotics, AI, computer vision, and production software.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#research">Research</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <p class="footer-copy">Copyright <span id="current-year"></span> Amatya Katyayan</p>
+    </div>
+  </footer>
 
-				<!-- Posts -->
-				<section class="post">
-					<header class="major">
-						<h1 display: inline-block; float:right; width:45vw;>Smart Agriculture <br> using Big Data and AI
-						</h1>
-						<img align="left"
-							src="https://github.com/Amatya27/Amatya27.github.io/blob/master/images/Sunflower.gif?raw=true"
-							loading="lazy" decoding="async" alt="Smart Agriculture System UI" width="150" height="150">
-						<p>The project aims to enable, anyone wishing to indulge in farming - powered by precise
-							agricultural solutions. The project aims to use technology to provide automated plant
-							disease identification using AI on multispectral images of the plant and adopt precision
-							agriculture based on data-driven decisions in a cost-effective manner. This project will be
-							a one-stop solution to monitor, take care and predict diseases on the plants in offline mode
-							as well.</p>
-					</header>
-					<div class="iframe-container">
-						<iframe width="560" height="315"
-							src="https://www.youtube.com/embed/OSB92jDg81c?si=uXdNa5_VsfRp3RTP"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen></iframe>
-					</div>
-				</section>
-				<section class="post">
-					<header class="major">
-						<h3><b>Prototyping Grant - Goa State Innovation Council</b></h3>
-					</header>
-					<img src="images/grant.png" alt="Resume preview" style="max-width:800px; width:100%; height:auto; display:block; margin:0 auto;" />
-
-				</section>
-				<section class="post">
-					<header class="major">
-						<h3><b>Final Year Project Competition</b></h3>
-					</header>
-					<div class="slideshow-container simple-slideshow">
-						<div class="slideshow">
-							<img src="images/fyp.jpg" class="active" alt="Tech Mania Certificate" />
-							<img src="images/fyp2.jpg" alt="Project Group" />
-							<!-- Add more images if you want -->
-						</div>
-					</div>
-					<p>Secured <b>Second Place</b> in Tech Mania 2022, final year project competition.</p>
-				</section>
-			</div>
-
-			<div class="toggle"></div>
-			<a href="#top" class="back-to-top scrolly"><i class="fa fa-chevron-up"></i></a>
-			<!-- Footer -->
-			<footer id="footer">
-
-				<section class="split contact">
-					<section>
-						<h3>Email</h3>
-						<p><a href="mailto:amatya27@gmail.com">amatya27@gmail.com</a></p>
-					</section>
-					<section>
-						<h3>Social</h3>
-						<ul class="icons alt">
-							<li><a href="https://www.linkedin.com/in/amatya-k-85152a168/"
-									class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://github.com/Amatya27?tab=repositories"
-									class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</section>
-				</section>
-			</footer>
-
-		</div>
-
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
-
-	</section>
-	<script>
-		const sec = document.querySelector('.sec');
-		const toggle = document.querySelector('.toggle');
-		toggle.onclick = function () {
-			sec.classList.toggle('dark')
-		}
-	</script>
-
+  <script src="assets/js/site.js"></script>
 </body>
-
 </html>

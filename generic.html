@@ -1,184 +1,196 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Hola Amigos! </title>
-		<link rel="shortcut icon" type="image/x-icon" href="logo.ico"/>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="keywords" content="Amatya Katyayan">
-		<meta property="og:title" content="Amatya Katyayan">
-		<meta property="og:description" content="-Web Portfolio-">
-		<meta property="og:image" content="https://github.com/Amatya27/Amatya27.github.io/blob/master/images/avataaars.png?raw=true">
-		<meta property="og:url" content="https://amatya27.github.io/">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link href ="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coding Highlights | Amatya Katyayan</title>
+  <meta
+    name="description"
+    content="Coding competition highlights from Amatya Katyayan, including IEEE CSPL, Tech Coders, Code Heist, and Newton School."
+  />
+  <link rel="canonical" href="https://amatya27.github.io/generic.html" />
+  <link rel="icon" href="logo.ico" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <meta name="theme-color" content="#081121" />
+  <script>
+    (function () {
+      var theme = "dark";
+      try {
+        var storedTheme = localStorage.getItem("portfolio-theme");
+        var systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        theme = storedTheme || systemTheme;
+      } catch (error) {
+        theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.dataset.theme = theme;
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body id="top" data-page="coding">
+  <a class="skip-link" href="#content">Skip to content</a>
 
-		<section class="sec">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#home" aria-label="Amatya Katyayan home">
+        <span class="brand-mark brand-mark-avatar">
+          <img class="brand-avatar" src="images/avataaars.png" width="80" height="80" alt="" />
+        </span>
+        <span class="brand-text">Amatya Katyayan</span>
+      </a>
+      <div class="header-actions">
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#research">Research</a>
+          <a href="index.html#achievements">Achievements</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-		<!-- Wrapper -->
-		<div id="wrapper" class="fade-in">
+  <main id="content">
+    <section class="section page-hero">
+      <div class="container page-hero-grid">
+        <div data-reveal>
+          <p class="eyebrow">Coding Highlights</p>
+          <h1>Competition history and problem-solving track record</h1>
+          <p class="page-intro">
+            Competitive programming has been one of the ways I have strengthened problem-solving under time
+            constraints. These results reflect consistency, speed, and algorithmic thinking.
+          </p>
+          <div class="button-row">
+            <a class="button" href="index.html#achievements">Back to Achievements</a>
+          </div>
+        </div>
+        <article class="card" data-reveal>
+          <p class="card-label">Top result</p>
+          <h2>IEEE CSPL 2021</h2>
+          <p>First Place in a 12-hour competitive programming event organized across IEEE student branches.</p>
+        </article>
+      </div>
+    </section>
 
-			<!-- Intro -->
-					<div id="intro">
-						<h1>Welcome To My Web Portfolio<br /></h1>
-						<h2>Amatya Katyayan</h2>
-						<p>A place where you can catch the latest updates on my projects and achievements!</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+    <section class="section section-tight">
+      <div class="container">
+        <article class="spotlight-card" data-reveal>
+          <img
+            src="images/cspl.jpg"
+            alt="IEEE CSPL 2021 winners banner"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="spotlight-content">
+            <p class="card-label">Competition Spotlight</p>
+            <h2>IEEE CSPL 2021 - First Place</h2>
+            <p>
+              Secured first rank in Computer Society Programming League (CSPL) 2021, a 12-hour coding competition
+              organized by IEEE Bombay Section and IEEE Hyderabad Section in collaboration with multiple IEEE student
+              branches.
+            </p>
+            <div class="button-row">
+              <a
+                class="button"
+                href="https://r10.ieee.org/bombay-cs/blog/2021/09/15/cspl-2021-winners/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </article>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Shazam!</a>
-					</header>
+        <div class="compact-grid">
+          <article class="compact-card" data-reveal>
+            <img
+              src="images/techcoders.jpg"
+              alt="Tech Coders coding competition banner"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="compact-card-body">
+              <p class="card-label">IEEE DBCE</p>
+              <h3>Tech Coders</h3>
+              <p>Third Place in a one-day online HackerRank-based competition organized by Don Bosco College of Engineering, Goa.</p>
+              <div class="button-row">
+                <a
+                  class="button button-small"
+                  href="https://dbcegoa.ac.in/ieee-student-branch-organizes-one-day-programming-competition-tech-coders/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Details
+                </a>
+              </div>
+            </div>
+          </article>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">My Projects</a></li>
-							<li class="active"><a href="generic.html">Coding Competitions</a></li>
-							<li><a href="elements.html">Research</a></li>
-							<li><a href="fyp.html">Final Year Project</a></li>
-							<li><a href="profile.html">Achievements</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/amatya-k-85152a168/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/Amatya27?tab=repositories" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+          <article class="compact-card" data-reveal>
+            <img
+              src="images/codeheist.jpg"
+              alt="Code Heist competition graphic"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="compact-card-body">
+              <p class="card-label">Competitive Programming</p>
+              <h3>Code Heist</h3>
+              <p>Finished within the top 50 participants in Code Heist, conducted by Code Warriors and Coding Blocks.</p>
+            </div>
+          </article>
 
-				<!-- Main -->
-					<div id="main">
+          <article class="compact-card" data-reveal>
+            <img
+              src="images/NewtonSchool.jpg"
+              alt="Newton School Grand Coding Contest results screen"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="compact-card-body">
+              <p class="card-label">National Contest</p>
+              <h3>Newton School Grand Coding Contest 2021</h3>
+              <p>Ranked 2365 among 53,732 participants in a large-scale coding contest.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<img align="left" src="images/game.gif" width="150" height="150" loading="lazy" decoding="async">
-									<h1>Coding</h1>
-									<p>I have always been a coding enthusiast and here are few of the coding competitions I have been a part of:</p>
-								</header>
-								<div class="image main"><img src="images/cspl.jpg" loading="lazy" decoding="async" alt="CSPL 2021 Winners Banner"></div>
-								<p>Secured <b>First Rank</b> in <a href="https://r10.ieee.org/bombay-cs/blog/2021/09/15/cspl-2021-winners/"><b style="color:rgb(135, 51, 247)">Computer Society Programming League (CSPL) 2021</b></a>, a 12-hour Coding Competition that was opened to all enthusiastic coders. The event was organized by IEEE Bombay Section and IEEE Hyderabad Section in collaboration with Computer Society at IEEE Student Branches of APSIT, GHRCE, SIES GST & SBJIT along with IEEE Hyderabad SAC.</p>
-							</section>
-							<section class="posts">
-								<article>
-								  <header>
-									<h2>
-									  <a href="#">Tech Coders<br />
-										IEEE DBCE
-									  </a>
-									</h2>
-								  </header>
-								  <a href="#" class="image fit">
-									<img
-									  src="images/techcoders.jpg"
-									  loading="lazy"
-									  decoding="async"
-									  class="center"
-									  alt="Tech Coders Coding Competition banner"
-									/>
-								  </a>
-								  <p>
-									Secured <b>Third Rank</b> in the one-day online competition
-									<a href="https://dbcegoa.ac.in/ieee-student-branch-organizes-one-day-programming-competition-tech-coders/">
-									  <strong style="color:rgb(135,51,247)">TECH CODERS</strong>
-									</a>
-									held on 13 September 2020 via HackerRank, organized by Don Bosco College of Engineering, Goa.
-								  </p>
-								</article>
-							  
-								<article>
-								  <header>
-									<h2>
-									  <a href="#">Code Heist<br />
-										By Code Warriors
-									  </a>
-									</h2>
-								  </header>
-								  <a href="#" class="image fit">
-									<img
-									  src="images/codeheist.jpg"
-									  loading="lazy"
-									  decoding="async"
-									  class="center"
-									  alt="Code Heist competition graphic"
-									/>
-								  </a>
-								  <p>
-									Secured a position within the <b>Top 50</b> participants in Code Heist,
-									held on 29 August 2020 by Code Warriors and Coding Blocks.
-								  </p>
-								</article>
-							  </section>
-							  
-							  <section class="post">
-								<article>
-								  <header>
-									<h2>
-									  <a href="#">Newton School Grand Coding Contest 2021</a>
-									</h2>
-								  </header>
-								  <a href="#" class="image fit">
-									<img
-									  src="images/NewtonSchool.jpg"
-									  loading="lazy"
-									  decoding="async"
-									  class="center"
-									  alt="Newton School Grand Coding Contest results"
-									/>
-								  </a>
-								  <p>Secured <b>2365</b> rank <b>amongst 53,732</b> participants in the Newton School Grand Coding Contest 2021.</p>
-								</article>
-							  </section>
-							  
-					</div>
+  <a class="back-to-top" href="#top" aria-label="Back to top">↑</a>
 
-				<div class="toggle"></div>
-				<a href="#top" class="back-to-top scrolly"><i class="fa fa-chevron-up"></i></a>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-title">Amatya Katyayan</p>
+        <p>Robotics, AI, computer vision, and production software.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#research">Research</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <p class="footer-copy">Copyright <span id="current-year"></span> Amatya Katyayan</p>
+    </div>
+  </footer>
 
-				<!-- Footer -->
-				<footer id="footer">
-						
-					<section class="split contact">
-						<section>
-							<h3>Email</h3>
-							<p><a href="mailto:amatya27@gmail.com">amatya27@gmail.com</a></p>
-						</section>
-						<section>
-							<h3>Social</h3>
-							<ul class="icons alt">
-								<li><a href="https://www.linkedin.com/in/amatya-k-85152a168/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
-								<li><a href="https://github.com/Amatya27?tab=repositories" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-							</ul>
-						</section>
-					</section>
-				</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-		</section>
-		<script>
-			const sec =document.querySelector('.sec');
-			const toggle=document.querySelector('.toggle');
-			toggle.onclick =function(){
-				sec.classList.toggle('dark')
-			}
-		</script>
-
-	</body>
-
+  <script src="assets/js/site.js"></script>
+</body>
 </html>
