@@ -194,6 +194,218 @@
         <div class="project-grid">
           <article class="project-card" data-reveal>
             <div class="media-frame">
+              <img
+                src="images/projects/dppo.gif"
+                alt="Robomimic Square runs: pretrained diffusion policy next to the DPPO fine-tuned policy"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="project-content">
+              <div class="card-topline">
+                <span class="pill">New</span>
+                <span class="pill pill-muted">Robot Learning</span>
+              </div>
+              <h3>Robust DPPO: RL Fine-Tuning for Robot Manipulation</h3>
+              <p>
+                Fine-tuned a diffusion policy with PPO (DPPO) on the Robomimic Square task, raising task success from 40% to 81%, then stress-tested it under 10 perturbations: object shifts, sensor noise, friction and mass.
+              </p>
+              <div class="chip-list" aria-label="Technologies used">
+                <span class="chip">Diffusion Policy</span>
+                <span class="chip">PPO</span>
+                <span class="chip">PyTorch</span>
+                <span class="chip">Robomimic</span>
+              </div>
+              <div class="button-row">
+                <a
+                  class="button button-small"
+                  href="https://github.com/Amatya27/robust-dppo-square"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="media-frame">
+              <a
+                class="video-thumb"
+                href="https://youtube.com/shorts/lxmrkH-uTj0"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Watch the Voice-Controlled Robot Arm short on YouTube"
+              >
+                <img
+                  src="https://i.ytimg.com/vi/lxmrkH-uTj0/hqdefault.jpg"
+                  alt="Thumbnail for the Voice-Controlled Robot Arm YouTube Short"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="video-thumb-badge">YouTube Shorts</span>
+                <span class="video-thumb-play" aria-hidden="true">▶</span>
+                <span class="video-thumb-copy">Watch Video</span>
+              </a>
+            </div>
+            <div class="project-content">
+              <div class="card-topline">
+                <span class="pill">New</span>
+                <span class="pill pill-muted">Language to Action</span>
+              </div>
+              <h3>Voice-Controlled Robot Arm</h3>
+              <p>
+                Built a language-to-action system: spoken commands like &ldquo;place the farthest blue block on the nearest red one&rdquo; are interpreted by Gemini, grounded with OpenCV block detection, and executed on a Dobot arm with stack tracking and a confirmation step.
+              </p>
+              <div class="chip-list" aria-label="Technologies used">
+                <span class="chip">Gemini</span>
+                <span class="chip">OpenCV</span>
+                <span class="chip">Speech Recognition</span>
+                <span class="chip">Dobot</span>
+              </div>
+              <div class="button-row">
+                <a
+                  class="button button-small"
+                  href="https://youtube.com/shorts/lxmrkH-uTj0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Demo
+                </a>
+                <a
+                  class="button button-small button-ghost"
+                  href="https://github.com/Amatya27/voice-controlled-dobot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="media-frame">
+              <img
+                src="images/projects/brandpilot.jpg"
+                alt="BrandPilot: web search, chunk and rank, LoRA model, brief and email with cited sources"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="project-content">
+              <div class="card-topline">
+                <span class="pill">New</span>
+                <span class="pill pill-muted">Generative AI</span>
+              </div>
+              <h3>BrandPilot: RAG + LoRA Outreach Assistant</h3>
+              <p>
+                Built a RAG + LoRA application that researches a company&rsquo;s marketing from the web and drafts sourced outreach, cutting research time per company from about 45 minutes to under 10 at W. P. Carey&rsquo;s Center for Entrepreneurship.
+              </p>
+              <div class="chip-list" aria-label="Technologies used">
+                <span class="chip">Gemma 3 + LoRA</span>
+                <span class="chip">RAG</span>
+                <span class="chip">FastAPI</span>
+                <span class="chip">Docker + Kubernetes</span>
+              </div>
+              <div class="button-row">
+                <a
+                  class="button button-small"
+                  href="https://github.com/Amatya27/BrandPilot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="media-frame">
+              <img
+                src="images/projects/ekf.gif"
+                alt="EKF run: odometry drifts away while the Kalman filter tracks the true path"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="project-content">
+              <div class="card-topline">
+                <span class="pill">New</span>
+                <span class="pill pill-muted">State Estimation</span>
+              </div>
+              <h3>EKF Sensor Fusion for a Ground Robot</h3>
+              <p>
+                Built an Extended Kalman Filter that fuses wheel odometry, gyro, GPS and LiDAR landmarks, cutting position error from 30.24 m to 0.30 m across 50 Monte Carlo runs, with Mahalanobis gating to reject GPS outliers.
+              </p>
+              <div class="chip-list" aria-label="Technologies used">
+                <span class="chip">Kalman Filter</span>
+                <span class="chip">Sensor Fusion</span>
+                <span class="chip">NumPy</span>
+                <span class="chip">pytest</span>
+              </div>
+              <div class="button-row">
+                <a
+                  class="button button-small"
+                  href="https://github.com/Amatya27/ekf-sensor-fusion"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="media-frame">
+              <img
+                src="images/projects/delivery.jpg"
+                alt="On-time delivery rate by purchase month from the interactive report"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="project-content">
+              <div class="card-topline">
+                <span class="pill">New</span>
+                <span class="pill pill-muted">Data Science</span>
+              </div>
+              <h3>Delivery Performance Analytics</h3>
+              <p>
+                Analyzed 96k real e-commerce deliveries end to end: SQL KPIs, a leakage-safe late-delivery model whose top-10% flags are 2.8x more likely to be late, and month-by-month model monitoring.
+              </p>
+              <div class="chip-list" aria-label="Technologies used">
+                <span class="chip">SQL</span>
+                <span class="chip">scikit-learn</span>
+                <span class="chip">Plotly</span>
+                <span class="chip">Statistics</span>
+              </div>
+              <div class="button-row">
+                <a
+                  class="button button-small"
+                  href="https://amatya27.github.io/delivery-performance-analytics/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Report
+                </a>
+                <a
+                  class="button button-small button-ghost"
+                  href="https://github.com/Amatya27/delivery-performance-analytics"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="media-frame">
               <button
                 class="video-thumb"
                 type="button"
@@ -239,6 +451,14 @@
                   Demo
                 </a>
                 <a class="button button-small button-secondary" href="#detail-tictactoe">Details</a>
+                <a
+                  class="button button-small button-ghost"
+                  href="https://github.com/Amatya27/dobot-tic-tac-toe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code
+                </a>
               </div>
             </div>
           </article>
@@ -271,11 +491,11 @@
               </div>
               <h3>Object Detection and Classification using Dobot &amp; YOLO</h3>
               <p>
-                Created an automated pick-and-place robot using YOLOv5 for real-time object classification and robotic
-                sorting through motion planning.
+                Created an automated pick-and-place robot using YOLOv8 for real-time object classification, sorting picture
+                cards onto the right pallet with a Dobot arm.
               </p>
               <div class="chip-list" aria-label="Technologies used">
-                <span class="chip">YOLOv5</span>
+                <span class="chip">YOLOv8</span>
                 <span class="chip">Object Detection</span>
                 <span class="chip">Motion Planning</span>
                 <span class="chip">Robotic Sorting</span>
@@ -290,6 +510,14 @@
                   Demo
                 </a>
                 <a class="button button-small button-secondary" href="#detail-yolo">Details</a>
+                <a
+                  class="button button-small button-ghost"
+                  href="https://github.com/Amatya27/dobot-yolo-sorting"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code
+                </a>
               </div>
             </div>
           </article>
@@ -340,6 +568,14 @@
                   Demo
                 </a>
                 <a class="button button-small button-secondary" href="#detail-maze">Details</a>
+                <a
+                  class="button button-small button-ghost"
+                  href="https://github.com/Amatya27/dobot-maze-solver"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code
+                </a>
               </div>
             </div>
           </article>
@@ -708,7 +944,7 @@
             <h3>Visual perception</h3>
             <div class="chip-list">
               <span class="chip">OpenCV</span>
-              <span class="chip">YOLOv5</span>
+              <span class="chip">YOLOv8</span>
               <span class="chip">Object Detection</span>
               <span class="chip">Image Segmentation</span>
             </div>
