@@ -1584,3 +1584,9 @@ body.lightbox-open {
   }
 
 }
+
+/* Designed thumbnails inside a 16:10 frame: show the whole image instead of a zoomed crop */
+.compact-card .media-frame > img {
+  height: 100%;
+  object-fit: cover;
+}
