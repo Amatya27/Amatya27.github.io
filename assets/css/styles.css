@@ -1590,3 +1590,10 @@ body.lightbox-open {
   height: 100%;
   object-fit: cover;
 }
+
+/* Earlier-project cards: same 16:10 media shape as the video cards, at every screen size */
+.compact-card > img {
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
